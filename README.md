@@ -1,14 +1,6 @@
 
 
-![GitHub Tag](https://img.shields.io/github/v/tag/kaonomi-net/mari?style=for-the-badge)
-
-
-
 ### MARI is an open-source framework for building robust, scalable and distributed 'multi-agent like' system based on [Microsoft Orleans](https://github.com/dotnet/orleans).
-
-
-
-
 
 
 M-A-R-I offers an automated orchestration and configuration system, enabling dynamic creation, editing, and modification of grain interactions.
