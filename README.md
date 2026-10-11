@@ -6,10 +6,9 @@
 
 ### MARI is an open-source framework for building robust, scalable and distributed 'multi-agent like' system based on [Microsoft Orleans](https://github.com/dotnet/orleans).
 
-<img alt="Framework beta level" height="75px" src="https://img.shields.io/badge/BETA-FF6A00?style=for-the-badge&logo=windows">
 
-> [!CAUTION]
-> The development is still in beta phase 
+
+
 
 
 M-A-R-I offers an automated orchestration and configuration system, enabling dynamic creation, editing, and modification of grain interactions.
@@ -601,9 +600,7 @@ serialization helpers (Newtonsoft converters, type solver), disposables, pattern
 
 ### Nuget Packages
 
-> [!IMPORTANT]
-> For now mari is in beta version.
-> Don't forget to use the pre-release flag in visual studio
+
 
 [![Nuget M-A-R-I](https://img.shields.io/nuget/dt/mari.framework.core.svg?color=%23512BD4&label=Nuget%20MARI%20Framework%20downloads)](https://www.nuget.org/packages?q=mari)
 
