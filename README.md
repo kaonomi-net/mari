@@ -2,7 +2,7 @@
 
 ![GitHub Tag](https://img.shields.io/github/v/tag/kaonomi-net/mari?style=for-the-badge)
 
-[![Nuget M-A-R-I](https://img.shields.io/nuget/dt/mari.framework.core.svg?color=%23512BD4&label=Nuget%20MARI%20Framework%20downloads)](https://www.nuget.org/packages?q=mari) [![MIT License](https://img.shields.io/github/license/kaonomi-net/mari?color=%230b0&style=flat-square)](https://github.com/kaonomi-net/mari/blob/main/LICENSE) [![Help Wanted](https://img.shields.io/github/issues/kaonomi-net/mari/help%20wanted?color=%232EA043&label=help%20wanted&style=flat-square)](https://github.com/kaonomi-net/mari/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![Good First Issues](https://img.shields.io/github/issues/kaonomi-net/mari/good%20first%20issue?color=%23512BD4&label=good%20first%20issue&style=flat-square)](https://github.com/kaonomi-net/mari/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+
 
 ### MARI is an open-source framework for building robust, scalable and distributed 'multi-agent like' system based on [Microsoft Orleans](https://github.com/dotnet/orleans).
 
