@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1010" viewBox="0 0 1600 1010" role="img" aria-labelledby="t d">
+<title id="t">M-A-R-I cluster</title>
+<desc id="d">M-A-R-I cluster: triggers and signals start sequences through doors, sequences feed streams, goal boards and a shared blackboard, with persistence to storage.</desc>
+<defs>
+<marker id="a-ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3d3b39"/></marker>
+<marker id="a-gold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#c49a3c"/></marker>
+<marker id="a-brown" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#7a5236"/></marker>
+<pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#e4ddd0" stroke-width="0.6" stroke-opacity="0.6"/></pattern>
+</defs>
+<rect width="1600" height="1010" fill="#ffffff"/>
+<rect width="1600" height="1010" fill="url(#grid)" opacity="0.6"/>
+<rect x="30" y="40" width="1540" height="880" rx="28" fill="none" stroke="#3d3b39" stroke-width="1.6" stroke-dasharray="10 7"/>
+<path d="M 14 60 V 24 H 50" fill="none" stroke="#3d3b39" stroke-width="2"/>
+<path d="M 1586 60 V 24 H 1550" fill="none" stroke="#3d3b39" stroke-width="2"/>
+<path d="M 14 900 V 936 H 50" fill="none" stroke="#3d3b39" stroke-width="2"/>
+<path d="M 1586 900 V 936 H 1550" fill="none" stroke="#3d3b39" stroke-width="2"/>
+<text x="58" y="72" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" letter-spacing="2" fill="#3d3b39" fill-opacity="0.6">CLUSTER://MARI  ·  NODES ONLINE</text>
+<rect x="58" y="80" width="8" height="8" fill="#7a5236"/>
+<path d="M 282 672 L 346 672 L 346 455" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 366 435 L 404 435 L 404 272 L 444 272" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 404 435 L 430 435 L 430 608 L 508 608" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 482 272 L 528 272" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 553 268 L 590 268 L 590 243 L 612 243" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 549 290 L 549 462 L 716 462" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 866 243 L 912 243 L 912 175 L 950 175" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 974 172 L 1018 168" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 250 722 L 677 722 L 677 778" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 322 722 L 322 872 L 406 872" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 700 800 L 1040 800 L 1040 470" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 716 492 L 650 492 L 650 680 L 732 680" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<path d="M 264 290 L 298 290 L 298 435 L 328 435" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 568 595 L 616 595 L 616 800 L 658 800" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 470 860 L 686 860 L 686 822" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 792 660 L 792 580 L 828 580 L 828 514" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 1060 420 L 1060 356 L 832 356 L 832 404" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 832 356 L 690 356 L 690 274" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 1074 438 L 1222 438 L 1222 334" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 1060 146 L 1060 84 L 1440 84" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 1076 156 L 1214 156 L 1214 205" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<path d="M 852 516 L 852 608 L 1098 608" fill="none" stroke="#7a5236" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="8 5" marker-start="url(#a-brown)" marker-end="url(#a-brown)"/>
+<path d="M 1346 277 L 1420 277 L 1420 410 L 1288 410 L 1288 512" fill="none" stroke="#7a5236" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="8 5" marker-start="url(#a-brown)" marker-end="url(#a-brown)"/>
+<rect x="618" y="216" width="248" height="54" rx="27" fill="#e3cf9f" stroke="#3d3b39" stroke-width="2"/>
+<rect x="646" y="234" width="28" height="18" rx="4" fill="#fff" stroke="#3d3b39" stroke-width="1.2"/>
+<rect x="684" y="234" width="28" height="18" rx="4" fill="#fff" stroke="#3d3b39" stroke-width="1.2"/>
+<rect x="722" y="234" width="28" height="18" rx="4" fill="#fff" stroke="#3d3b39" stroke-width="1.2"/>
+<rect x="760" y="234" width="28" height="18" rx="4" fill="#fff" stroke="#3d3b39" stroke-width="1.2"/>
+<rect x="798" y="234" width="28" height="18" rx="4" fill="#fff" stroke="#3d3b39" stroke-width="1.2"/>
+<ellipse cx="840" cy="243" rx="12" ry="27" fill="#e3cf9f" stroke="#3d3b39" stroke-width="2"/>
+<path d="M 1448 66 v 46 a 38 12 0 0 0 76 0 v -46" fill="#f7f3ec" stroke="#3d3b39" stroke-width="2"/>
+<ellipse cx="1486" cy="66" rx="38" ry="12" fill="#e3cf9f" stroke="#3d3b39" stroke-width="2"/>
+<path d="M 1448 88 a 38 12 0 0 0 76 0" fill="none" stroke="#3d3b39" stroke-width="1.2"/>
+<text x="1486" y="148" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" letter-spacing="1" fill="#6e6a64">STORAGE</text>
+<rect x="1104" y="207" width="240" height="125" rx="6" fill="#f7f3ec" stroke="#3d3b39" stroke-width="2"/>
+<line x1="1130" y1="207" x2="1130" y2="332" stroke="#3d3b39" stroke-width="1.6" stroke-opacity="0.8"/>
+<line x1="1318" y1="207" x2="1318" y2="332" stroke="#3d3b39" stroke-width="1.6" stroke-opacity="0.8"/>
+<text x="1144" y="241" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#3d3b39">Goal :</text>
+<text x="1144" y="296" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" fill="#3d3b39" fill-opacity="0.85">- Data A</text>
+<text x="1144" y="314" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" fill="#3d3b39" fill-opacity="0.85">- Data B</text>
+<path d="M 1254 233 h 20 v 15 l -5 5 h -15 z" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1274 248 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1242 277 h 20 v 15 l -5 5 h -15 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1262 292 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1204 303 h 20 v 15 l -5 5 h -15 z" fill="#c49a3c" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1224 318 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1284 303 h 20 v 15 l -5 5 h -15 z" fill="#6e6a64" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1304 318 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1223.0 199.5 A 16 16 0 1 1 1253.0 199.5" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<path d="M 1355.1 272.3 A 18 18 0 1 1 1343.0 305.6" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<polygon points="1097.3,318.5 1086.0,325.0 1074.7,318.5 1074.7,305.5 1086.0,299.0 1097.3,305.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1086" cy="312" r="3" fill="#7a5236"/>
+<polygon points="1117.3,330.5 1106.0,337.0 1094.7,330.5 1094.7,317.5 1106.0,311.0 1117.3,317.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1106" cy="324" r="3" fill="#7a5236"/>
+<polygon points="1105.3,344.5 1094.0,351.0 1082.7,344.5 1082.7,331.5 1094.0,325.0 1105.3,331.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1094" cy="338" r="3" fill="#7a5236"/>
+<rect x="720" y="406" width="216" height="108" rx="6" fill="#f7f3ec" stroke="#3d3b39" stroke-width="2"/>
+<line x1="746" y1="406" x2="746" y2="514" stroke="#3d3b39" stroke-width="1.6" stroke-opacity="0.8"/>
+<line x1="910" y1="406" x2="910" y2="514" stroke="#3d3b39" stroke-width="1.6" stroke-opacity="0.8"/>
+<text x="760" y="440" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#3d3b39">Goal :</text>
+<text x="760" y="478" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" fill="#3d3b39" fill-opacity="0.85">- Data A</text>
+<text x="760" y="496" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" fill="#3d3b39" fill-opacity="0.85">- Data B</text>
+<path d="M 860 428 h 18 v 13 l -5 5 h -13 z" fill="#c49a3c" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 878 441 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 820 456 h 18 v 13 l -5 5 h -13 z" fill="#3d3b39" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 838 469 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 890 472 h 18 v 13 l -5 5 h -13 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 908 485 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 846 484 h 18 v 13 l -5 5 h -13 z" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 864 497 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 837.9 398.9 A 15 15 0 1 1 866.1 398.9" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<path d="M 946.8 454.2 A 16 16 0 1 1 936.0 483.9" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<polygon points="711.3,492.5 700.0,499.0 688.7,492.5 688.7,479.5 700.0,473.0 711.3,479.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="700" cy="486" r="3" fill="#7a5236"/>
+<polygon points="731.3,504.5 720.0,511.0 708.7,504.5 708.7,491.5 720.0,485.0 731.3,491.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="720" cy="498" r="3" fill="#7a5236"/>
+<polygon points="719.3,518.5 708.0,525.0 696.7,518.5 696.7,505.5 708.0,499.0 719.3,505.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="708" cy="512" r="3" fill="#7a5236"/>
+<rect x="1100" y="512" width="392" height="176" rx="6" fill="#3d3b39" stroke="#3d3b39" stroke-width="2"/>
+<line x1="1126" y1="512" x2="1126" y2="688" stroke="#f7f3ec" stroke-width="1.6" stroke-opacity="0.8"/>
+<line x1="1466" y1="512" x2="1466" y2="688" stroke="#f7f3ec" stroke-width="1.6" stroke-opacity="0.8"/>
+<text x="1140" y="552" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#f7f3ec">Goal :</text>
+<text x="1140" y="636" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13" fill="#f7f3ec" fill-opacity="0.85">- Data A</text>
+<text x="1140" y="662" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="13" fill="#f7f3ec" fill-opacity="0.85">- Data B</text>
+<path d="M 1276 542 h 30 v 25 l -5 5 h -25 z" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1306 567 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1330 586 h 30 v 25 l -5 5 h -25 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1360 611 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1390 566 h 30 v 25 l -5 5 h -25 z" fill="#6e6a64" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1420 591 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1220 594 h 30 v 25 l -5 5 h -25 z" fill="#c49a3c" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1250 619 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1256 634 h 30 v 25 l -5 5 h -25 z" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1286 659 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1400 632 h 30 v 25 l -5 5 h -25 z" fill="#c49a3c" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1430 657 h -5 v 5" fill="none" stroke="#3d3b39" stroke-width="1"/>
+<path d="M 1279.3 502.5 A 22 22 0 1 1 1320.7 502.5" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<path d="M 1508.5 574.4 A 26 26 0 1 1 1491.0 622.5" fill="none" stroke="#3d3b39" stroke-width="3" marker-end="url(#a-ink)"/>
+<polygon points="1095.0,671.5 1082.0,679.0 1069.0,671.5 1069.0,656.5 1082.0,649.0 1095.0,656.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1082" cy="664" r="3" fill="#7a5236"/>
+<polygon points="1115.0,683.5 1102.0,691.0 1089.0,683.5 1089.0,668.5 1102.0,661.0 1115.0,668.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1102" cy="676" r="3" fill="#7a5236"/>
+<polygon points="1103.0,697.5 1090.0,705.0 1077.0,697.5 1077.0,682.5 1090.0,675.0 1103.0,682.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.3"/>
+<circle cx="1090" cy="690" r="3" fill="#7a5236"/>
+<path d="M 333 420 h 11 a 15 15 0 0 1 0 30 h -11 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1.6"/>
+<line x1="338" y1="427" x2="338" y2="443" stroke="#f7f3ec" stroke-width="1.4"/>
+<path d="M 450 257 h 11 a 15 15 0 0 1 0 30 h -11 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1.6"/>
+<line x1="455" y1="264" x2="455" y2="280" stroke="#f7f3ec" stroke-width="1.4"/>
+<path d="M 673 785 h 11 a 15 15 0 0 1 0 30 h -11 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1.6"/>
+<line x1="678" y1="792" x2="678" y2="808" stroke="#f7f3ec" stroke-width="1.4"/>
+<polygon points="536.0,263.0 547.0,263.0 542.0,275.0 549.0,275.0 535.0,294.0 540.0,281.0 533.0,281.0" fill="#c49a3c" stroke="#3d3b39" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="957.0,160.0 968.0,160.0 963.0,172.0 970.0,172.0 956.0,191.0 961.0,178.0 954.0,178.0" fill="#c49a3c" stroke="#3d3b39" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="230.2,704.8 242.9,704.8 237.2,718.5 245.2,718.5 229.1,740.4 234.8,725.5 226.8,725.5" fill="#c49a3c" stroke="#3d3b39" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="270.5,297.5 254.0,307.0 237.5,297.5 237.5,278.5 254.0,269.0 270.5,278.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="263.5,303.5 247.0,313.0 230.5,303.5 230.5,284.5 247.0,275.0 263.5,284.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="256.5,309.5 240.0,319.0 223.5,309.5 223.5,290.5 240.0,281.0 256.5,290.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="249.5,305.5 240.0,311.0 230.5,305.5 230.5,294.5 240.0,289.0 249.5,294.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="240" y="305" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<polygon points="570.5,607.5 554.0,617.0 537.5,607.5 537.5,588.5 554.0,579.0 570.5,588.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="563.5,613.5 547.0,623.0 530.5,613.5 530.5,594.5 547.0,585.0 563.5,594.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="556.5,619.5 540.0,629.0 523.5,619.5 523.5,600.5 540.0,591.0 556.5,600.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="549.5,615.5 540.0,621.0 530.5,615.5 530.5,604.5 540.0,599.0 549.5,604.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="540" y="615" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<polygon points="1076.5,162.5 1060.0,172.0 1043.5,162.5 1043.5,143.5 1060.0,134.0 1076.5,143.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1069.5,168.5 1053.0,178.0 1036.5,168.5 1036.5,149.5 1053.0,140.0 1069.5,149.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1062.5,174.5 1046.0,184.0 1029.5,174.5 1029.5,155.5 1046.0,146.0 1062.5,155.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1055.5,170.5 1046.0,176.0 1036.5,170.5 1036.5,159.5 1046.0,154.0 1055.5,159.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="1046" y="170" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<polygon points="1076.5,449.5 1060.0,459.0 1043.5,449.5 1043.5,430.5 1060.0,421.0 1076.5,430.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1069.5,455.5 1053.0,465.0 1036.5,455.5 1036.5,436.5 1053.0,427.0 1069.5,436.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1062.5,461.5 1046.0,471.0 1029.5,461.5 1029.5,442.5 1046.0,433.0 1062.5,442.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="1055.5,457.5 1046.0,463.0 1036.5,457.5 1036.5,446.5 1046.0,441.0 1055.5,446.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="1046" y="457" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<polygon points="792.5,681.5 776.0,691.0 759.5,681.5 759.5,662.5 776.0,653.0 792.5,662.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="785.5,687.5 769.0,697.0 752.5,687.5 752.5,668.5 769.0,659.0 785.5,668.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="778.5,693.5 762.0,703.0 745.5,693.5 745.5,674.5 762.0,665.0 778.5,674.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="771.5,689.5 762.0,695.0 752.5,689.5 752.5,678.5 762.0,673.0 771.5,678.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="762" y="689" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<polygon points="470.5,871.5 454.0,881.0 437.5,871.5 437.5,852.5 454.0,843.0 470.5,852.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="463.5,877.5 447.0,887.0 430.5,877.5 430.5,858.5 447.0,849.0 463.5,858.5" fill="#f7f3ec" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="456.5,883.5 440.0,893.0 423.5,883.5 423.5,864.5 440.0,855.0 456.5,864.5" fill="#fff" stroke="#3d3b39" stroke-width="1.8"/>
+<polygon points="449.5,879.5 440.0,885.0 430.5,879.5 430.5,868.5 440.0,863.0 449.5,868.5" fill="none" stroke="#c49a3c" stroke-width="1.4"/>
+<text x="440" y="879" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="14" font-weight="700" fill="#3d3b39">S</text>
+<text x="250" y="252" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Sequence</text>
+<text x="350" y="398" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Door</text>
+<text x="270" y="680" text-anchor="end" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Trigger</text>
+<text x="430" y="754" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Signal</text>
+<text x="742" y="198" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Stream</text>
+<text x="1296" y="724" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#3d3b39">Blackboard</text>
+<text x="742" y="290" text-anchor="middle" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="11" letter-spacing="1" fill="#6e6a64">STREAM QUEUE</text>
+<rect x="556" y="872" width="488" height="96" rx="4" fill="#3d3b39"/>
+<rect x="556" y="872" width="10" height="96" fill="#c49a3c"/>
+<text x="806" y="934" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="3" fill="#ffffff">M-A-R-I CLUSTER</text>
+<rect x="760" y="950" width="92" height="4" fill="#c49a3c"/>
+<path d="M 60 966 L 104 966" fill="none" stroke="#3d3b39" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-ink)"/>
+<text x="114" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">control flow</text>
+<path d="M 210 966 L 254 966" fill="none" stroke="#c49a3c" stroke-width="2.2" stroke-linejoin="round" marker-end="url(#a-gold)"/>
+<text x="264" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">data flow</text>
+<path d="M 360 966 L 404 966" fill="none" stroke="#7a5236" stroke-width="2.2" stroke-linejoin="round" stroke-dasharray="8 5" marker-start="url(#a-brown)" marker-end="url(#a-brown)"/>
+<text x="414" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">blackboard sync</text>
+<polygon points="1159.5,971.5 1150.0,977.0 1140.5,971.5 1140.5,960.5 1150.0,955.0 1159.5,960.5" fill="#e3cf9f" stroke="#3d3b39" stroke-width="1.2"/>
+<text x="1168" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">vgrains</text>
+<path d="M 1241 956 h 8 a 10 10 0 0 1 0 20 h -8 z" fill="#7a5236" stroke="#3d3b39" stroke-width="1.2"/>
+<text x="1266" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">door</text>
+<polygon points="1336.5,955.5 1344.2,955.5 1340.7,963.9 1345.6,963.9 1335.8,977.2 1339.3,968.1 1334.4,968.1" fill="#c49a3c" stroke="#3d3b39" stroke-width="1.3" stroke-linejoin="round"/>
+<text x="1354" y="970" font-family="Consolas, 'Cascadia Mono', 'Courier New', monospace" font-size="12" fill="#3d3b39">trigger / signal</text>
+</svg>

@@ -17,7 +17,7 @@ M-A-R-I offers an automated orchestration and configuration system, enabling dyn
 It incorporates built-in [Features](#features) to manage virtual grains and facilitate communication between them. This simplifies the creation of various [Sequences](#sequences) of virtual grains that can be transformed an input to output. M-A-R-I utilizes [Signals](#signals) to transmit information and [Triggers](#triggers) to initiate different [Sequences](#sequences), thereby chaining processes through a graph. Most [Features](#features) are describe in a serializable structure.
 
 <p align="center">
-    <img src="assets/full-schema-0.3.png" width="650px" />
+    <img src="assets/mari-cluster.png" alt="M-A-R-I cluster: triggers, signals, doors, sequences, streams, goals and blackboard" width="800px" />
 </p>
 
 M-A-R-I functions as a layer on top of [Microsoft Orleans](https://docs.microsoft.com/dotnet/orleans/), ensuring that all features of Orleans are retained.
