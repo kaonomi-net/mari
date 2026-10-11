@@ -1,0 +1,68 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Orlean -->
+    <PackageVersion Include="Docker.DotNet" Version="3.125.15" />
+    <PackageVersion Include="H.Formatters.Newtonsoft.Json" Version="13.0.59" />
+    <PackageVersion Include="MessagePack" Version="2.5.301" />
+    <PackageVersion Include="Microsoft.Orleans.Core" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Core.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Reminders" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Runtime" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Streaming" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.TestingHost" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Client" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Server" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Orleans.Sdk" Version="8.0.0" />
+    <PackageVersion Include="MongoDB.Driver" Version="2.25.0" />
+    <PackageVersion Include="Newtonsoft.Json.Schema" Version="4.0.1" />
+    <PackageVersion Include="Orleans.Providers.MongoDB" Version="8.0.3" />
+    <!-- System -->
+    <PackageVersion Include="System.Reactive" Version="6.0.0" />
+    <!-- Microsoft -->
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.2" />
+    <PackageVersion Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.9.2" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.9.2" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
+    <PackageVersion Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageVersion Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
+    <!-- Test -->
+    <PackageVersion Include="AutoFixture" Version="4.18.1" />
+    <PackageVersion Include="AutoFixture.AutoNSubstitute" Version="4.18.1" />
+    <PackageVersion Include="AutoFixture.Xunit2" Version="4.18.1" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageVersion Include="NSubstitute" Version="5.1.0" />
+    <PackageVersion Include="NFluent" Version="3.0.4" />
+    <PackageVersion Include="xunit" Version="2.9.1" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+    <!-- Toolbox (benchmark, WPF) -->
+    <PackageVersion Include="BenchmarkDotNet" Version="0.13.12" />
+    <PackageVersion Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+    <PackageVersion Include="Dirkster.AvalonDock" Version="4.72.1" />
+    <PackageVersion Include="Dirkster.AvalonDock.Themes.VS2013" Version="4.72.1" />
+    <!-- Other -->
+    <PackageVersion Include="Cronos" Version="0.8.4" />
+    <PackageVersion Include="H.Pipes" Version="2.0.59" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageVersion Include="MongoDB.Bson" Version="2.25.0" />
+    <!-- Auto Ref In AspNet missing in WPF -->
+    <PackageVersion Include="System.Data.Odbc" Version="8.0.0" />
+    <PackageVersion Include="System.Data.OleDb" Version="8.0.0" />
+    <PackageVersion Include="System.IO.Ports" Version="8.0.0" />
+    <PackageVersion Include="System.Runtime.Serialization.Schema" Version="8.0.0" />
+    <PackageVersion Include="System.ServiceModel.Syndication" Version="8.0.0" />
+    <PackageVersion Include="System.ServiceProcess.ServiceController" Version="8.0.0" />
+    <PackageVersion Include="YamlDotNet" Version="16.1.0" />
+  </ItemGroup>
+</Project>

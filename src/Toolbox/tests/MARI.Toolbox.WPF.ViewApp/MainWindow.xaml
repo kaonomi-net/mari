@@ -1,0 +1,148 @@
+﻿<mari:BorderLessWindow x:Class="MARI.Toolbox.WPF.ViewApp.MainWindow"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:mari="http://mari.toolbox.ui/"
+                        xmlns:avalon="https://github.com/Dirkster99/AvalonDock" xmlns:views="clr-namespace:MARI.Toolbox.WPF.ViewApp.Views"
+                        mc:Ignorable="d"
+                        Style="{StaticResource FlatWindowStyle}"
+                        Title="MainWindow" Height="450" Width="800"
+                        WindowState="Maximized"
+                        HeaderBackground="{StaticResource MenuBackgroundBrush}">
+
+    <mari:BorderLessWindow.Resources>
+        <DataTemplate x:Key="HeaderPane">
+            <TextBlock Text="{Binding Title}" />
+        </DataTemplate>
+    </mari:BorderLessWindow.Resources>
+
+    <mari:BorderLessWindow.Header>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Menu Margin="{StaticResource DefaultMargin}"
+                  BorderThickness="0">
+                <MenuItem Header="File">
+                    <MenuItem Header="Open" />
+                    <MenuItem Header="Save as ...">
+                        <MenuItem Header="*.txt" />
+                        <MenuItem Header="*.json" IsEnabled="False" />
+                        <MenuItem Header="*.xlsx" />
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Exit" />
+                </MenuItem>
+            </Menu>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="{StaticResource DefaultRightMargin}" 
+                        VerticalAlignment="Center">
+
+                <mari:TogglePopup Margin="{DynamicResource DefaultMargin}"
+                                   BorderBrush="{DynamicResource MainBorderBrush}"
+                                   BorderThickness="{DynamicResource DefaultBorderThickness}">
+                    
+                    <mari:TogglePopup.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <Path Data="{StaticResource UserIconSource}" />
+                            <TextBlock Text="Mickae T." />
+                        </StackPanel>
+                    </mari:TogglePopup.Header>
+
+                    <Grid Height="550" Width="350">
+                        <views:SideMenu Margin="{DynamicResource DefaultMargin}" />
+                    </Grid>
+
+                </mari:TogglePopup>
+
+            </StackPanel>
+        </Grid>
+    </mari:BorderLessWindow.Header>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <avalon:DockingManager Grid.Row="0" x:Name="avalonDock"
+                               AutoWindowSizeWhenOpened="True"
+                               AnchorableHeaderTemplate="{StaticResource HeaderPane}"
+                               DocumentHeaderTemplate="{StaticResource HeaderPane}">
+
+            <LayoutRoot>
+                <LayoutPanel Orientation="Horizontal">
+                    <LayoutAnchorablePane DockWidth="350">
+
+                        <LayoutAnchorable x:Name="WinFormsWindow"
+                                          Title="SideMenu"
+                                          CanClose="False"
+                                          CanHide="False">
+
+                            <views:SideMenu />
+
+                        </LayoutAnchorable>
+
+                    </LayoutAnchorablePane>
+                    
+                    <LayoutDocumentPaneGroup>
+                        <LayoutDocumentPane x:Name="LayoutDocumentPane">
+                            <LayoutDocument Title="Document 1"
+                                            ContentId="document1">
+                                <views:MainDocumentWork />
+                            </LayoutDocument>
+
+                            <LayoutDocument Title="Document 2" ContentId="document2" />
+
+                        </LayoutDocumentPane>
+                    </LayoutDocumentPaneGroup>
+                    
+                    <LayoutAnchorablePaneGroup DockWidth="350">
+                        <LayoutAnchorablePane>
+
+                            <LayoutAnchorable Title="Tool Window 1" ContentId="toolWindow1">
+                                <views:LogView />
+                            </LayoutAnchorable>
+
+                        </LayoutAnchorablePane>
+                    </LayoutAnchorablePaneGroup>
+                </LayoutPanel>
+
+                <LayoutRoot.BottomSide>
+                    <LayoutAnchorSide>
+                        <LayoutAnchorGroup>
+                            
+                            <LayoutAnchorable Title="Tool Window 2" ContentId="toolWindow2">
+                                <views:LogView />
+                            </LayoutAnchorable>
+
+                        </LayoutAnchorGroup>
+                    </LayoutAnchorSide>
+                </LayoutRoot.BottomSide>
+            </LayoutRoot>
+        </avalon:DockingManager>
+
+        <!-- Bottom Info bar -->
+        <Border Grid.Row="2" 
+                MinHeight="{DynamicResource IconDefaultSize}"
+                Background="{DynamicResource ComplementaryBackgroundBrush}">
+
+            <Grid Margin="{DynamicResource DefaultMargin}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <ProgressBar Grid.Column="2" Width="100" VerticalAlignment="Center" Height="8" IsIndeterminate="True"
+                             BorderBrush="{DynamicResource ContrastBorderBrush}"/>
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</mari:BorderLessWindow>

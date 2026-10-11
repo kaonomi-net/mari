@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+		
+		<IsPackable>true</IsPackable>
+		<Description>MARI library use to build definitions Sequence, Signal, Trigger ...</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Definition</PackageTags>
+		
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="..\..\..\docs\definitions.schema.json" Link="Resources\definitions.schema.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MARI.Framework.Cluster.Abstractions\MARI.Framework.Cluster.Abstractions.csproj" />
+	  <ProjectReference Include="..\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+	  <ProjectReference Include="..\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.Framework.Builders.UnitTests" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json.Schema" />
+	  <PackageReference Include="YamlDotNet" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\BuildErrorSR.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>BuildErrorSR.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\BuildErrorSR.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>BuildErrorSR.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>

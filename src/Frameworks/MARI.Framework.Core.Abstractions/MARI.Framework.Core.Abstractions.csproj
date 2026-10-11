@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI core abstract information use by all mari parts.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Core;Abstract</PackageTags>
+
+		<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Models\MetaData\**" />
+	  <EmbeddedResource Remove="Models\MetaData\**" />
+	  <None Remove="Models\MetaData\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Toolbox\MARI.Toolbox\MARI.Toolbox.csproj" />
+	  <PackageReference Include="MessagePack" />
+	  <PackageReference Include="Microsoft.Orleans.Sdk" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.Framework.Node" />
+		<InternalsVisibleTo Include="MARI.Framework.Client" />
+		<InternalsVisibleTo Include="MARI.Framework.Node.Signals" />
+
+		<!-- Testing Purpose -->
+		<InternalsVisibleTo Include="MARI.Framework.Node.Signals.UnitTests" />
+		<InternalsVisibleTo Include="MARI.Framework.Core.CodeGenerator.UnitTests" />
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MARI.Framework.Core.CodeGenerator\MARI.Framework.Core.CodeGenerator.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="IDynamicDefinitionHandler.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>IDynamicDefinitionHandler.tt</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\MARIExceptionSR.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>MARIExceptionSR.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\MARIExceptionSR.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>MARIExceptionSR.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="IDynamicDefinitionHandler.tt">
+	    <LastGenOutput>IDynamicDefinitionHandler.cs</LastGenOutput>
+	    <Generator>TextTemplatingFileGenerator</Generator>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+</Project>

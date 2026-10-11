@@ -1,0 +1,140 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+                    xmlns:reskeys="clr-namespace:AvalonDock.Themes.VS2013.Themes;assembly=AvalonDock.Themes.VS2013" xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ControlAccentBrushKey}" options:Freeze="False" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.Background}" options:Freeze="False" Color="Transparent" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.PanelBorderBrush}" options:Freeze="False" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.TabBackground}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabDefaultBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabDefaultBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabDefaultText}" options:Freeze="False"  Color="{DynamicResource UnFocusForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabHoveredBackground}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabHoveredBorder}" options:Freeze="False" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.AutoHideTabHoveredText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonDefaultGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonHoveredBackground}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonHoveredBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource SelectionBackgroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonPressedBackground}" options:Freeze="False"  Color="{DynamicResource SelectionBackgroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonPressedBorder}" options:Freeze="False"  Color="{DynamicResource SelectionBackgroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellOverflowButtonPressedGlyph}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabSelectedActiveBackground}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabSelectedActiveText}" options:Freeze="False"  Color="{DynamicResource ForegroundOnAccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabSelectedInactiveBackground}" options:Freeze="False"  Color="{DynamicResource LightBackgroundColor}"/>
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabSelectedInactiveText}" options:Freeze="False"   Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabUnselectedBackground}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabUnselectedText}" options:Freeze="False"  Color="{DynamicResource UnFocusForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabUnselectedHoveredBackground}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabUnselectedHoveredText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActiveGlyph}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredBackground}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActiveHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource ForegroundOnAccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActivePressedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActivePressedBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedActivePressedGlyph}" options:Freeze="False" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactiveGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactiveHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonSelectedInactivePressedGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredGlyph}" options:Freeze="False"  Color="#D0E6F5" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonHoveredBackground}" options:Freeze="False"  Color="#52B0EF" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonHoveredBorder}" options:Freeze="False"  Color="#52B0EF" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonPressedBackground}" options:Freeze="False"  Color="#0E6198" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonPressedBorder}" options:Freeze="False"  Color="#0E6198" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DocumentWellTabButtonUnselectedTabHoveredButtonPressedGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionActiveBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionActiveGrip}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionActiveText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionInactiveBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionInactiveGrip}" options:Freeze="False"  Color="{DynamicResource DisabledAccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionInactiveText}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActiveGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActiveHoveredBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActiveHoveredBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActiveHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActivePressedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActivePressedBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonActivePressedGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactiveGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactiveHoveredGlyph}" options:Freeze="False"  Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactivePressedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactivePressedBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowCaptionButtonInactivePressedGlyph}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabSelectedActiveBackground}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabSelectedActiveText}" options:Freeze="False"  Color="{DynamicResource ForegroundOnAccentColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabSelectedInactiveBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabSelectedInactiveText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabUnselectedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabUnselectedText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabUnselectedHoveredBackground}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.ToolWindowTabUnselectedHoveredText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.FloatingDocumentWindowBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.FloatingDocumentWindowBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}"/>
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.FloatingToolWindowBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.FloatingToolWindowBorder}" options:Freeze="False"  Color="{DynamicResource ComplementColor}"/>
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.NavigatorWindowBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.NavigatorWindowForeground}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.NavigatorWindowSelectedBackground}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.NavigatorWindowSelectedText}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DockingButtonBackgroundBrushKey}" options:Freeze="False"  Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DockingButtonForegroundBrushKey}" options:Freeze="False"  Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DockingButtonForegroundArrowBrushKey}" options:Freeze="False"  Color="{DynamicResource ContrastAccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DockingButtonStarBorderBrushKey}" options:Freeze="False"  Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.DockingButtonStarBackgroundBrushKey}" options:Freeze="False"  Color="#4C000000" />
+
+    <system:Double x:Key="{x:Static reskeys:ResourceKeys.DockingButtonWidthKey}">25</system:Double>
+    <system:Double x:Key="{x:Static reskeys:ResourceKeys.DockingButtonHeightKey}">25</system:Double>
+
+    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.PreviewBoxBorderBrushKey}" options:Freeze="False"  Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="{x:Static reskeys:ResourceKeys.PreviewBoxBackgroundBrushKey}" options:Freeze="False"   Opacity="0.5" Color="{DynamicResource AccentColor}" />
+
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=MenuSeparatorBorderBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource LightAccentColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=SubmenuItemBackgroundKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=MenuItemHighlightedBackgroundKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource LightBackgroundColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=SubmenuItemBackgroundHighlightedKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource LightBackgroundColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=FocusScrollButtonBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="#FF042271" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ScrollButtonBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=CheckMarkBackgroundBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=CheckMarkBorderBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=CheckMarkForegroundBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=DisabledSubMenuItemBackgroundBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=DisabledSubMenuItemBorderBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=MenuBorderBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=MenuBackgroundKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=TopLevelHeaderMenuBackgroundKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=TextBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ItemBackgroundSelectedKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource {x:Static reskeys:ResourceKeys.ControlAccentColorKey}}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ItemTextDisabledKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource DisabledColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=NormalBackgroundBrushKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="{ComponentResourceKey ResourceId=ItemBackgroundHoverKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" options:Freeze="False" Color="{DynamicResource LightBackgroundColor}" />
+    <effects:DropShadowEffect x:Key="{ComponentResourceKey ResourceId=DropShadowEffectKey, TypeInTargetAssembly={x:Type reskeys:ResourceKeys}}" xmlns:effects="clr-namespace:System.Windows.Media.Effects;assembly=PresentationCore" ShadowDepth="2" Color="Black" />
+
+</ResourceDictionary>

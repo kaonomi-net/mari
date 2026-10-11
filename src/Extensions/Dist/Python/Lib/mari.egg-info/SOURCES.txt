@@ -1,0 +1,7 @@
+README.md
+mari.py
+pyproject.toml
+mari.egg-info/PKG-INFO
+mari.egg-info/SOURCES.txt
+mari.egg-info/dependency_links.txt
+mari.egg-info/top_level.txt

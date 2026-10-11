@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Constants.xaml" />
+        <ResourceDictionary Source="Paths.xaml" />
+        <ResourceDictionary Source="Brushes.xaml" />
+
+        <ResourceDictionary Source="Styles/BorderLessWindowStyle.xaml" />
+        <ResourceDictionary Source="Styles/PathStyles.xaml" />
+        <ResourceDictionary Source="Styles/TextStyles.xaml" />
+        <ResourceDictionary Source="Styles/ButtonStyles.xaml" />
+        <ResourceDictionary Source="Styles/WaitingRingStyles.xaml" />
+        <ResourceDictionary Source="Styles/WaitingOverlayStyles.xaml" />
+        <ResourceDictionary Source="Styles/CollectionStyles.xaml" />
+        <ResourceDictionary Source="Styles/ContainerStyles.xaml" />
+        <ResourceDictionary Source="Styles/DecorumStyles.xaml" />
+        <ResourceDictionary Source="Styles/ScrollBarStyles.xaml" />
+        <ResourceDictionary Source="Styles/TreeViewStyles.xaml" />
+        <ResourceDictionary Source="Styles/ComboBoxStyles.xaml" />
+        <ResourceDictionary Source="Styles/ExpanderStyles.xaml" />
+        <ResourceDictionary Source="Styles/MenuStyles.xaml" />
+        <ResourceDictionary Source="Styles/CheckBoxStyles.xaml" />
+        <ResourceDictionary Source="Styles/ProgressBarStyles.xaml" />
+        <ResourceDictionary Source="Styles/DataGridStyles.xaml" />
+        <ResourceDictionary Source="Styles/TogglePopupStyles.xaml" />
+        
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>

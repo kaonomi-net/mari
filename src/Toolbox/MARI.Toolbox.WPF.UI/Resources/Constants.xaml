@@ -1,0 +1,104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:Double x:Key="SeparatorSize">1</system:Double>
+    <system:Double x:Key="BigSeparatorSize">3</system:Double>
+    <system:Double x:Key="GridSplitSize">3</system:Double>
+    
+    <system:Double x:Key="SmallSpace">3</system:Double>
+    <system:Double x:Key="DefaultSpace">5</system:Double>
+    <system:Double x:Key="BigSpace">25</system:Double>
+    
+    <system:Double x:Key="NegateSmallSpace">-3</system:Double>
+    <system:Double x:Key="NegateDefaultSpace">-5</system:Double>
+    <system:Double x:Key="NegateBigSpace">-25</system:Double>
+
+    <system:Double x:Key="DefaultBorderThicknessValue">1</system:Double>
+    <system:Double x:Key="BigBorderThicknessValue">3</system:Double>
+
+    <system:Double x:Key="SmallestSize">8</system:Double>
+    <system:Double x:Key="SmallSize">15</system:Double>
+    <system:Double x:Key="DefaultSize">24</system:Double>
+    <system:Double x:Key="BigSize">32</system:Double>
+
+    <system:Double x:Key="InnerIconSmallestSize">10</system:Double>
+    <system:Double x:Key="IconSmallestSize">12</system:Double>
+    <system:Double x:Key="IconSmallSize">16</system:Double>
+    <system:Double x:Key="IconDefaultSize">32</system:Double>
+    <system:Double x:Key="IconBigSize">64</system:Double>
+
+    <system:Double x:Key="SmallestFontSize">9</system:Double>
+    <system:Double x:Key="InfoFontSize">11</system:Double>
+    <system:Double x:Key="DefaultFontSize">12</system:Double>
+    <system:Double x:Key="HighlightValueFontSize">16</system:Double>
+    <system:Double x:Key="CategoryTileFontSize">16</system:Double>
+    <system:Double x:Key="TileFontSize">20</system:Double>
+
+    <FontFamily x:Key="DefaultUniformFontFamily">Segoe UI</FontFamily>
+
+    <Thickness x:Key="DefaultBorderThickness" Top="{StaticResource DefaultBorderThicknessValue}"
+                                              Left="{StaticResource DefaultBorderThicknessValue}"
+                                              Bottom="{StaticResource DefaultBorderThicknessValue}"
+                                              Right="{StaticResource DefaultBorderThicknessValue}" />
+
+    <Thickness x:Key="DefaultBorderThicknessExceptTop" Left="{StaticResource DefaultBorderThicknessValue}"
+                                                       Bottom="{StaticResource DefaultBorderThicknessValue}"
+                                                       Right="{StaticResource DefaultBorderThicknessValue}" />
+
+    <Thickness x:Key="BigLeftBorderThickness" Left="{StaticResource BigBorderThicknessValue}" />
+
+    <Thickness x:Key="BigBorderThickness" Top="{StaticResource BigBorderThicknessValue}"
+                                          Left="{StaticResource BigBorderThicknessValue}"
+                                          Bottom="{StaticResource BigBorderThicknessValue}"
+                                          Right="{StaticResource BigBorderThicknessValue}" />
+
+    <Thickness x:Key="BigBorderThicknessExceptTop" Left="{StaticResource BigBorderThicknessValue}"
+                                                   Bottom="{StaticResource BigBorderThicknessValue}"
+                                                   Right="{StaticResource BigBorderThicknessValue}" />
+
+    <Thickness x:Key="DefaultMargin" Top="{StaticResource DefaultSpace}"
+                                     Left="{StaticResource DefaultSpace}"
+                                     Bottom="{StaticResource DefaultSpace}"
+                                     Right="{StaticResource DefaultSpace}" />
+
+    <Thickness x:Key="NegateDefaultMargin" Top="{StaticResource NegateDefaultSpace}"
+                                           Left="{StaticResource NegateDefaultSpace}"
+                                           Bottom="{StaticResource NegateDefaultSpace}"
+                                           Right="{StaticResource NegateDefaultSpace}" />
+
+    <Thickness x:Key="DefaultLeftRightMargin" Left="{StaticResource DefaultSpace}"
+                                              Right="{StaticResource DefaultSpace}" />
+
+    <Thickness x:Key="DefaultTopBottomMargin" Top="{StaticResource DefaultSpace}"
+                                              Bottom="{StaticResource DefaultSpace}" />
+
+    <Thickness x:Key="DefaultRightMargin" Right="{StaticResource DefaultSpace}" />
+    <Thickness x:Key="DefaultLeftMargin" Left="{StaticResource DefaultSpace}" />
+    <Thickness x:Key="DefaultTopMargin" Top="{StaticResource DefaultSpace}" />
+    <Thickness x:Key="DefaultBottomMargin" Bottom="{StaticResource DefaultSpace}" />
+
+    <Thickness x:Key="GoldenMargin" Top="{StaticResource SmallSpace}"
+                                    Left="{StaticResource DefaultSpace}"
+                                    Bottom="{StaticResource SmallSpace}"
+                                    Right="{StaticResource DefaultSpace}" />
+
+    <Thickness x:Key="SmallMargin" Top="{StaticResource SmallSpace}"
+                                   Left="{StaticResource SmallSpace}"
+                                   Bottom="{StaticResource SmallSpace}"
+                                   Right="{StaticResource SmallSpace}" />
+
+    <Thickness x:Key="SmallTopBottomMargin" Top="{StaticResource SmallSpace}"
+                                            Bottom="{StaticResource SmallSpace}" />
+
+    <Thickness x:Key="SmallLeftRightMargin" Left="{StaticResource SmallSpace}"
+                                            Right="{StaticResource SmallSpace}" />
+
+    <Thickness x:Key="SmallRightMargin" Right="{StaticResource SmallSpace}" />
+    <Thickness x:Key="SmallLeftMargin" Left="{StaticResource SmallSpace}" />
+    <Thickness x:Key="SmallTopMargin" Top="{StaticResource SmallSpace}" />
+    <Thickness x:Key="SmallBottomMargin" Bottom="{StaticResource SmallSpace}" />
+
+    <GridLength x:Key="SmallGridSeparator">3px</GridLength>
+    <GridLength x:Key="DefaultGridSeparator">5px</GridLength>
+
+</ResourceDictionary>

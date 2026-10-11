@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="$(SolutionDir)\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>false</IsPackable>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\src\Extensions\Bags\MARI.Framework.Bag.Web.Abstractions\MARI.Framework.Bag.Web.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

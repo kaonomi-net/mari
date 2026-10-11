@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<IsPackable>false</IsPackable>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <None Remove="Resources\Sample.html" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Node\MARI.Framework.Node.csproj" />
+		<ProjectReference Include="..\..\..\src\Tests\MARI.Test.Interfaces\MARI.Test.Interfaces.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Sample.html" />
+	</ItemGroup>
+
+</Project>

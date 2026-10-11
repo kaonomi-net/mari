@@ -1,0 +1,121 @@
+﻿<mari:BorderLessWindow x:Class="MARI.Toolbox.ComServer.Client.Test.MainWindow"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:local="clr-namespace:MARI.Toolbox.ComServer.Client.Test"
+                        mc:Ignorable="d"
+                        xmlns:mari="http://mari.toolbox.ui/"
+                        Title="MainWindow" Height="450" Width="800"
+                        mari:WaitingOverlayHelper.Enabled="True"
+                        Style="{StaticResource FlatWindowStyle}"
+                        d:DataContext="{d:DesignInstance Type={x:Type local:MainViewModel}, IsDesignTimeCreatable=False}">
+
+    <mari:BorderLessWindow.Header>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Connected" />
+            <Path Data="{DynamicResource CheckIconSource}"
+                  Fill="{DynamicResource SuccessBrush}"
+                  Visibility="{Binding IsConnected, Converter={StaticResource BoolToVisibilityConveter}}"/>
+
+            <mari:ButtonPath IconPath="{DynamicResource CancelIconSource}" Command="{Binding ConnectToServerCommand}"
+                              IconBrush="{DynamicResource ErrorBrush}"
+                              Content="Try connection"
+                              Visibility="{Binding IsConnected, Converter={StaticResource NotBoolToVisibilityConveter}}"/>
+
+            <TextBlock Text="{Binding Title}" Margin="{DynamicResource DefaultMargin}" />
+
+        </StackPanel>
+    </mari:BorderLessWindow.Header>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition />
+            
+        </Grid.ColumnDefinitions>
+        
+        <ItemsControl ItemsSource="{Binding Logs}" Grid.Column="1"
+                      BorderBrush="{DynamicResource MainBorderBrush}"
+                      BorderThickness="{DynamicResource DefaultBorderThickness}"
+                      Margin="{DynamicResource DefaultMargin}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel VerticalAlignment="Bottom" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" />
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <Grid Grid.Column="0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Clients"/>
+
+                <mari:ButtonPath IconPath="{DynamicResource RefreshIconSource}"  Grid.Column="1"
+                                  Command="{Binding RefreshServerListCommand}"
+                                  />
+
+            </Grid>
+            
+            <ItemsControl ItemsSource="{Binding Clients}" Grid.Row="1"
+                          BorderBrush="{DynamicResource MainBorderBrush}"
+                          BorderThickness="{DynamicResource DefaultBorderThickness}"
+                          Margin="{DynamicResource DefaultMargin}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="{DynamicResource DefaultMargin}" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50px" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Query" />
+            <TextBox Text="{Binding Query, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Margin="{DynamicResource DefaultMargin}" />
+            <mari:ButtonPath IconPath="{DynamicResource RightIconSource}" Grid.Column="2" Command="{Binding QueryCommand}" />
+
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="{DynamicResource DefaultMargin}" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50px" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Send" />
+            <TextBox Text="{Binding Send, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Margin="{DynamicResource DefaultMargin}"  />
+            <mari:ButtonPath IconPath="{DynamicResource RightIconSource}" Grid.Column="2" Command="{Binding SendCommand}" />
+
+        </Grid>
+
+    </Grid>
+</mari:BorderLessWindow>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<OutputType>exe</OutputType>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\src\Extensions\Bags\MARI.Framework.Bag.DebugTools\MARI.Framework.Bag.DebugTools.csproj" />
+	  <ProjectReference Include="..\..\..\src\Extensions\Bags\MARI.Framework.Bag.Toolbox\MARI.Framework.Bag.Toolbox.csproj" />
+	  <ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+	  <ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Node\MARI.Framework.Node.csproj" />
+	  <ProjectReference Include="..\..\..\src\Extensions\MARI.Framework.Node.Cron\MARI.Framework.Node.Cron.csproj" />
+	  <ProjectReference Include="..\..\..\src\Extensions\MARI.Framework.Node.Signals\MARI.Framework.Node.Signals.csproj" />
+	  <ProjectReference Include="..\..\..\src\Extensions\MARI.Framework.Node.StreamQueue\MARI.Framework.Node.StreamQueue.csproj" />
+	</ItemGroup>
+</Project>

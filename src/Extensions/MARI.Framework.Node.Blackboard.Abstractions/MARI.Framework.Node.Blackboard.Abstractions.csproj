@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>
+			MARI node abstraction part extension providing blackboard algorithme to mari cluster.<br. />A blackboard is a shared memory space with a controller that managed and react based on data.
+		</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Node;Extension;Blackboard</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.Framework.Node.Blackboard" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="IBlackboardTemplate.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>IBlackboardTemplate.tt</DependentUpon>
+	  </None>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Frameworks\MARI.Framework.Node.Abstractions\MARI.Framework.Node.Abstractions.csproj" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Update="IBlackboardTemplate.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>IBlackboardTemplate.tt</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\BlackboardErrorSR.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>BlackboardErrorSR.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\BlackboardErrorSR.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>BlackboardErrorSR.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <None Update="IBlackboardTemplate.tt">
+	    <Generator>TextTemplatingFileGenerator</Generator>
+	    <LastGenOutput>IBlackboardTemplate.cs</LastGenOutput>
+	  </None>
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<IsTestProject>false</IsTestProject>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AutoFixture" />
+		<PackageReference Include="AutoFixture.AutoNSubstitute" />
+		<ProjectReference Include="..\..\Toolbox\tests\MARI.Toolbox.UnitTests.ToolKit\MARI.Toolbox.UnitTests.ToolKit.csproj" />
+		<PackageReference Include="H.Formatters.Newtonsoft.Json" />
+		<PackageReference Include="H.Pipes" />
+		<PackageReference Include="Microsoft.Orleans.TestingHost" />
+		<PackageReference Include="NFluent" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="System.ComponentModel.TypeConverter" />
+		
+		<PackageReference Include="NSubstitute" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Node\MARI.Framework.Node.csproj" />
+	</ItemGroup>
+
+</Project>

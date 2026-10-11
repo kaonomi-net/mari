@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Logic Colors -->
+
+    <SolidColorBrush x:Key="TransparentAccentBrush" Color="{DynamicResource AccentColor}" Opacity="0.3" />
+    <SolidColorBrush x:Key="AccentBrush" Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ContrastAccentBrush" Color="{DynamicResource ContrastAccentColor}" />
+    
+    <SolidColorBrush x:Key="SuccessBrush" Color="{DynamicResource SuccessColor}" />
+    <SolidColorBrush x:Key="ErrorBrush" Color="{DynamicResource ErrorColor}" />
+    <SolidColorBrush x:Key="WarningBrush" Color="{DynamicResource WarningColor}" />
+
+    <!-- Backgrounds -->
+    
+    <SolidColorBrush x:Key="MainBackgroundBrush" Color="{DynamicResource PrimaryColor}" />
+    <SolidColorBrush x:Key="MenuBackgroundBrush" Color="{DynamicResource SecondaryColor}" />
+    <SolidColorBrush x:Key="ComplementaryBackgroundBrush" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="ContrastComplementaryBackgroundBrush" Color="{DynamicResource SecondaryComplementColor}" />
+    <SolidColorBrush x:Key="HighContrastBackgroundBrush" Color="{DynamicResource HighContrastColor}" />
+
+    <SolidColorBrush x:Key="TransparentComplementaryBackgroundBrush" Color="{DynamicResource ComplementColor}" Opacity="0.3" />
+
+    <SolidColorBrush x:Key="HighlightBackgroundBrush" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="ContrastMainBackgroundBrush" Color="{DynamicResource SecondaryColor}" />
+    <SolidColorBrush x:Key="SelectBackgroundBrush" Color="{DynamicResource ComplementColor}" />
+
+    <SolidColorBrush x:Key="HeaderBackgroundBrush" Color="{DynamicResource SecondaryColor}" />
+    <SolidColorBrush x:Key="UnSelectedTabHeaderBackgroundBrush" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="SelectedTabHeaderBackgroundBrush" Color="{DynamicResource PrimaryColor}" />
+
+    <!-- Borders-->
+    <SolidColorBrush x:Key="MainBorderBrush" Color="{DynamicResource ComplementColor}" />
+    <SolidColorBrush x:Key="ContrastBorderBrush" Color="{DynamicResource SecondaryComplementColor}" />
+    
+    <!-- Foregrounds -->
+    <SolidColorBrush x:Key="MainForegroundBrush" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="ForegroundOnAccentBrush" Color="{DynamicResource ForegroundOnAccentColor}" />
+    <SolidColorBrush x:Key="ForegroundOnContrastAccentBrush" Color="{DynamicResource ForegroundOnContrastAccentColor}" />
+    <SolidColorBrush x:Key="DisabledForegroundBrush" Color="{DynamicResource DisabledForegroundColor}" />
+    <SolidColorBrush x:Key="SelectedTabHeaderForegroundBrush" Color="{DynamicResource ForegroundColor}" />
+    <SolidColorBrush x:Key="HighContrastForegroundBrush" Color="{DynamicResource ForegroundOnContrastAccentColor}" />
+
+    <!-- Mask -->
+    <SolidColorBrush x:Key="HighlightMaskBrush" Color="{DynamicResource HighlightMaskColor}" />
+    <SolidColorBrush x:Key="NormalMaskBrush" Color="{DynamicResource NormalMaskColor}" />
+    <SolidColorBrush x:Key="DisabledMaskBrush" Color="{DynamicResource DisabledMaskColor}" />
+
+</ResourceDictionary>

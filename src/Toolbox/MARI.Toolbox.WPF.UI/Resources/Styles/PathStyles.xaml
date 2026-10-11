@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="IconPathStyle" TargetType="Path">
+        <Setter Property="Margin" Value="{DynamicResource SmallMargin}" />
+        <Setter Property="Stretch" Value="Uniform" />
+        <Setter Property="Fill" Value="{DynamicResource AccentBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Height" Value="{DynamicResource IconDefaultSize}" />
+        <Setter Property="Width" Value="{DynamicResource IconDefaultSize}" />
+    </Style>
+
+    <Style x:Key="IconSmallPathStyle" TargetType="Path" BasedOn="{StaticResource IconPathStyle}">
+        <Setter Property="Height" Value="{DynamicResource IconSmallSize}" />
+        <Setter Property="Width" Value="{DynamicResource IconSmallSize}" />
+    </Style>
+
+    <Style x:Key="IconSmallestPathStyle" TargetType="Path" BasedOn="{StaticResource IconPathStyle}">
+        <Setter Property="Height" Value="{DynamicResource IconSmallestSize}" />
+        <Setter Property="Width" Value="{DynamicResource IconSmallestSize}" />
+    </Style>
+
+    <Style x:Key="DefaultIconStyle" TargetType="{x:Type Path}" BasedOn="{StaticResource IconPathStyle}" />
+    
+    <Style TargetType="{x:Type Path}" BasedOn="{StaticResource IconSmallPathStyle}" />
+    
+</ResourceDictionary>

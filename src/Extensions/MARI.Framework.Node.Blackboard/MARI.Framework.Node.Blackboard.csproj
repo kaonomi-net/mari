@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>
+			MARI node extension providing blackboard algorithme to mari cluster.<br. />A blackboard is a shared memory space with a controller that managed and react based on data.
+		</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Node;Extension;Blackboard</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Orleans.Reminders" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="VGrains\BlackboardBaseControllerGrain.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>BlackboardBaseControllerGrain.tt</DependentUpon>
+		</None>
+		<None Include="VGrains\BlackboardBaseEventControllerGrain.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>BlackboardBaseEventControllerGrain.tt</DependentUpon>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+		<ProjectReference Include="..\..\Frameworks\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+		<ProjectReference Include="..\..\Frameworks\MARI.Framework.Node\MARI.Framework.Node.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Node.Blackboard.Abstractions\MARI.Framework.Node.Blackboard.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="VGrains\BlackboardBaseControllerGrain.tt">
+			<Generator>TextTemplatingFileGenerator</Generator>
+			<LastGenOutput>BlackboardBaseControllerGrain.cs</LastGenOutput>
+		</None>
+		<None Update="VGrains\BlackboardBaseEventControllerGrain.tt">
+			<Generator>TextTemplatingFileGenerator</Generator>
+			<LastGenOutput>BlackboardBaseEventControllerGrain.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="VGrains\BlackboardBaseControllerGrain.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>BlackboardBaseControllerGrain.tt</DependentUpon>
+		</Compile>
+		<Compile Update="VGrains\BlackboardBaseEventControllerGrain.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>BlackboardBaseEventControllerGrain.tt</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+</Project>

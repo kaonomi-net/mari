@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI extension cluster library using Docker.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agents;Framework;Cluster;Docker;Extension</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Docker.DotNet" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Frameworks\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+	  <ProjectReference Include="..\..\Frameworks\MARI.Framework.Node.Abstractions\MARI.Framework.Node.Abstractions.csproj" />
+	</ItemGroup>
+</Project>

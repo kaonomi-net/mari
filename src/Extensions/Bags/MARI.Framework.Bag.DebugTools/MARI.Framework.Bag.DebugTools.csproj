@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI vgrains bag used to carry debug tools.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Node;Extension;Debug;Bag</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+	  <ProjectReference Include="..\..\..\Frameworks\MARI.Framework.Core.CodeGenerator\MARI.Framework.Core.CodeGenerator.csproj"  OutputItemType="Analyzer"  PrivateAssets="all" />
+	  <ProjectReference Include="..\..\..\Frameworks\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+	  <ProjectReference Include="..\..\..\Frameworks\MARI.Framework.Node.Abstractions\MARI.Framework.Node.Abstractions.csproj" />
+	</ItemGroup>
+</Project>

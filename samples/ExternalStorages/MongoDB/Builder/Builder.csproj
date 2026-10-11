@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
+		<CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\src\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+	  <ProjectReference Include="..\..\..\..\src\Extensions\MARI.Framework.Extensions.Mongo.Abstractions\MARI.Framework.Extensions.Mongo.Abstractions.csproj" />
+	  <ProjectReference Include="..\..\..\..\src\Extensions\Bags\MARI.Framework.Bag.DebugTools\MARI.Framework.Bag.DebugTools.csproj" />
+	  <PackageReference Include="MongoDB.Driver" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Common\Common.csproj" />
+	</ItemGroup>
+
+</Project>

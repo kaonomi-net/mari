@@ -1,0 +1,6 @@
+﻿FROM <<PARENT_IMAGE>>
+WORKDIR /usr/src/app
+
+<<EXTR_BUILD_INSTRUCTION>>
+
+<<COPY_FILES>>

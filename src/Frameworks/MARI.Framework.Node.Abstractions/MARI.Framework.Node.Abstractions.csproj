@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI abstract cluster node server part.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agents;Framework;Node;Abstract</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Orleans.Server" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+	  <ProjectReference Include="..\MARI.Framework.Cluster.Abstractions\MARI.Framework.Cluster.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.Framework.Node" />
+		
+		<!-- Unit test -->
+		<InternalsVisibleTo Include="MARI.Framework.Node.UnitTests" />
+		<InternalsVisibleTo Include="MARI.Framework.Node.Abstraction.UnitTests" />
+		<InternalsVisibleTo Include="MARI.UnitTests.ToolKit" />
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\NodeAbstractionExceptionSR.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>NodeAbstractionExceptionSR.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\NodeAbstractionExceptionSR.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>NodeAbstractionExceptionSR.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\..\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<IsTestProject>false</IsTestProject>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="AutoFixture" />
+		<PackageReference Include="AutoFixture.AutoNSubstitute" />
+		<PackageReference Include="NFluent" />
+		<PackageReference Include="xunit" />
+		<PackageReference Include="NSubstitute" />
+		<PackageReference Include="System.ComponentModel.TypeConverter" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\..\MARI.Toolbox.Abstractions\MARI.Toolbox.Abstractions.csproj" />
+	  <ProjectReference Include="..\..\MARI.Toolbox\MARI.Toolbox.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<Description>ToolBox that contains extention for WPF dev. Abstract Part</Description>
+		<PackageTags>toolbox;dotnet;helpers;configurations;WPF</PackageTags>
+	</PropertyGroup>
+	
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>
+			MARI node builder part extension providing blackboard algorithme to mari cluster.<br. />A blackboard is a shared memory space with a controller that managed and react based on data.
+		</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Node;Extension;Blackboard;Builders</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+	  <ProjectReference Include="..\MARI.Framework.Node.Blackboard.Abstractions\MARI.Framework.Node.Blackboard.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

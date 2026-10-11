@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ctrl="clr-namespace:MARI.Toolbox.WPF.UI.Controls">
+
+    <Style x:Key="DefaultTogglePopupStyle" TargetType="{x:Type ctrl:TogglePopup}">
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="Background" Value="{DynamicResource MenuBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MainBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{DynamicResource DefaultBorderThickness}" />
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource MainForegroundBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrl:TogglePopup}">
+                    <Grid>
+                        <ToggleButton BorderBrush="{TemplateBinding BorderBrush}"
+                                      BorderThickness="{TemplateBinding BorderThickness}"
+                                      Margin="{TemplateBinding Padding}"
+                                      x:Name="ToggleName"
+                                      Style="{DynamicResource DefaultFlatToggleButton}"
+                                      IsChecked="{Binding IsChecked, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}">
+                            
+                            <ContentPresenter ContentSource="Header"
+                                              ContentTemplate="{TemplateBinding HeaderTemplate}"
+                                              ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
+                                              ContentStringFormat="{TemplateBinding HeaderStringFormat}"/>
+                        </ToggleButton>
+
+                        <Popup x:Name="PART_Popup" 
+                               Margin="{DynamicResource SmallTopMargin}"
+                               IsOpen="{Binding IsChecked, Mode=TwoWay, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                               PlacementTarget="{Binding ElementName=ToggleName}">
+                            
+                            <Border BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    Background="{TemplateBinding Background}">
+                                
+                                <ContentPresenter  ContentSource="Content"
+                                                   ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                                   ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                   ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+                            </Border>
+                        </Popup>
+                        
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style BasedOn="{StaticResource DefaultTogglePopupStyle}" TargetType="{x:Type ctrl:TogglePopup}" />
+
+</ResourceDictionary>

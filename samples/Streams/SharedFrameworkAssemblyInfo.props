@@ -1,0 +1,23 @@
+<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>12</LangVersion>
+
+		<Authors>Kaonomi</Authors>
+		<Company>Kaonomi.net</Company>
+
+		<NeutralLanguage>en</NeutralLanguage>
+		<Copyright>Copyright (c) Kaonomi.net</Copyright>
+		
+		<PackageProjectUrl>https://github.com/kaonomi-net/mari</PackageProjectUrl>
+		<PackageIconUrl>https://github.com/kaonomi-net/mari/blob/master/docs/logo.png</PackageIconUrl>
+		<PackageLicenseUrl>https://github.com/kaonomi-net/mari/blob/master/LICENSE</PackageLicenseUrl>
+		<RepositoryType>Git</RepositoryType>
+		<RepositoryUrl>https://github.com/kaonomi-net/mari/</RepositoryUrl>
+
+	</PropertyGroup>
+	
+</Project>

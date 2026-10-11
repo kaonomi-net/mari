@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<IsPackable>true</IsPackable>
+		<Description>ToolBox that contains extention for WPF dev. UI Part linked to Avalon View dependency</Description>
+		<PackageTags>toolbox;dotnet;helpers;configurations;WPF</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dirkster.AvalonDock" />
+		<PackageReference Include="Dirkster.AvalonDock.Themes.VS2013" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MARI.Toolbox.WPF.UI\MARI.Toolbox.WPF.UI.csproj" />
+		<ProjectReference Include="..\MARI.Toolbox.WPF\MARI.Toolbox.WPF.csproj" />
+	</ItemGroup>
+
+</Project>

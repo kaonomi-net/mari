@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI core use by all mari parts.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Core</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Toolbox\MARI.Toolbox\MARI.Toolbox.csproj" />
+		<PackageReference Include="Microsoft.Orleans.Core" />
+		<PackageReference Include="Microsoft.Orleans.Runtime" />
+		<PackageReference Include="System.Reactive" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.Framework.Client" />
+		<InternalsVisibleTo Include="MARI.Framework.Cluster" />
+		<InternalsVisibleTo Include="MARI.Framework.Node" />
+		<InternalsVisibleTo Include="MARI.Framework.Node.Cron" />
+		<InternalsVisibleTo Include="MARI.Framework.Node.Signals" />
+		<InternalsVisibleTo Include="MARI.UnitTests.ToolKit" />
+
+		<!-- Testing Purpose -->
+		<InternalsVisibleTo Include="MARI.Framework.Node.Signals.UnitTests" />
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Resources\MARICoreLogSR.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>MARICoreLogSR.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Resources\MARICoreLogSR.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>MARICoreLogSR.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+
+</Project>

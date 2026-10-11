@@ -1,0 +1,78 @@
+# .NET Desktop
+
+# Build and run tests for .NET Desktop or Windows classic desktop solutions.
+# Add steps that publish symbols, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
+
+trigger: none
+
+pool:
+  vmImage: 'windows-latest'
+
+parameters:
+  - name: release_target
+    displayName: define the nuget export target
+    type: string
+    default: Azure
+    values: 
+      - Azure
+      - Nuget
+      
+  - name: export_symbols
+    displayName: Define if symbols must be exported
+    type: boolean
+    default: true
+
+variables:
+  - group: mari-frameworks-variables
+
+  - ${{ if eq(parameters.release_target, 'Azure') }}:
+    - group: nuget-azure-api
+  
+  - ${{ if eq(parameters.release_target, 'Nuget') }}:
+    - group: nuget-org-api-kaonomi
+
+  - name: pkg_push_filter
+    ${{ if parameters.export_symbols }}:
+      value: "*.symbols.nupkg"
+    ${{ else }}:
+      value: "*.nupkg"
+
+  # MARI framework version : FinalPkgVersion is set at runtime by the 'Read package version' step
+  # from <Version> in SharedFrameworkAssemblyInfo.props (single source of truth)
+
+resources:
+  repositories:
+    - repository: tpl
+      type: git
+      name: Yaml-Templates
+#      ref: refs/heads/dev
+
+steps:
+  - task: UseDotNet@2
+    displayName: 'Install .NET Core SDK'
+    inputs:
+      version: 8.x
+      includePreviewVersions: true # Required for preview versions
+
+  - task: NuGetAuthenticate@1
+
+  - pwsh: |
+      $props = Get-Content -Raw -Path "$(Build.SourcesDirectory)/SharedFrameworkAssemblyInfo.props"
+      if ($props -notmatch '<Version>\s*([^<\s]+)\s*</Version>') {
+        Write-Error "Unable to find <Version> in SharedFrameworkAssemblyInfo.props"
+        exit 1
+      }
+      $version = $Matches[1]
+      Write-Host "MARI package version : $version"
+      Write-Host "##vso[task.setvariable variable=FinalPkgVersion]$version"
+    displayName: 'Read package version from SharedFrameworkAssemblyInfo.props'
+
+  - template: Templates/dotnet/nuget-steps.yaml@tpl
+    parameters:
+      package_version: $(FinalPkgVersion)
+      include_symbols: ${{ parameters.export_symbols }}
+      solution_file_name: $(solution_file_name)
+      nuget_depo: $(nuget_depo)
+      nuget_package_filter: $(pkg_push_filter)
+      secret_api_key: $(secret_api_key)

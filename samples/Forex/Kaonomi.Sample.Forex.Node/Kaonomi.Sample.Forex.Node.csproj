@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="$(SolutionDir)\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>false</IsPackable>
+		<OutputType>Exe</OutputType>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Extensions\Bags\MARI.Framework.Bag.Web.Abstractions\MARI.Framework.Bag.Web.Abstractions.csproj" />
+		<ProjectReference Include="..\..\..\src\Extensions\Bags\MARI.Framework.Bag.Web\MARI.Framework.Bag.Web.csproj" />
+		<ProjectReference Include="..\..\..\src\Extensions\MARI.Framework.Node.Signals\MARI.Framework.Node.Signals.csproj" />
+		<ProjectReference Include="..\..\..\src\Extensions\MARI.Framework.Node.Cron\MARI.Framework.Node.Cron.csproj" />
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Builders\MARI.Framework.Builders.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="$(SolutionDir)Kaonomi.Sample.Forex.VGrain\Kaonomi.Sample.Forex.VGrain.csproj" />
+		<ProjectReference Include="$(SolutionDir)Kaonomi.Sample.Forex.VGrain.Abstractions\Kaonomi.Sample.Forex.VGrain.Abstractions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+</Project>

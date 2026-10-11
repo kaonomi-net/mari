@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Build Test": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\..\\Tests\\MARI.Framework.Core.CodeGenerator.UnitTests\\MARI.Framework.Core.CodeGenerator.UnitTests.csproj"
+    }
+  }
+}

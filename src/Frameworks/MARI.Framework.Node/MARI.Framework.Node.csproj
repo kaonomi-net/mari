@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI cluster node server part.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Node</PackageTags>
+
+	</PropertyGroup>
+
+	<!--<ItemGroup>
+	  <Compile Remove="Internals\**" />
+	  <Compile Remove="Repositories\**" />
+	  <EmbeddedResource Remove="Internals\**" />
+	  <EmbeddedResource Remove="Repositories\**" />
+	  <None Remove="Internals\**" />
+	  <None Remove="Repositories\**" />
+	</ItemGroup>-->
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Extensions\MARI.Framework.Node.Signals\MARI.Framework.Node.Signals.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Node.Abstractions\MARI.Framework.Node.Abstractions.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Cluster\MARI.Framework.Cluster.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" />
+		<PackageReference Include="Microsoft.Orleans.Reminders" />
+		<PackageReference Include="Microsoft.Orleans.Streaming" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="MARI.UnitTests.ToolKit" />
+		<InternalsVisibleTo Include="MARI.Framework.Node.UnitTests" />
+		<InternalsVisibleTo Include="MARI.Framework.Core.CodeGenerator.UnitTests"/>
+		<InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Compile Update="Resources\NodeExceptionSR.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>NodeExceptionSR.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\NodeExceptionSR.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>NodeExceptionSR.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+</Project>

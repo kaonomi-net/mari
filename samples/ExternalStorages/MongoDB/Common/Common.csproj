@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="../SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<CopyDebugSymbolFilesFromPackages>true</CopyDebugSymbolFilesFromPackages>
+		<CopyDocumentationFilesFromPackages>true</CopyDocumentationFilesFromPackages>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\src\Frameworks\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+	  <ProjectReference Include="..\..\..\..\src\Frameworks\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿// Copyright (c) Kaonomi.
+// The MARI licenses this file to you under the MIT license.
+// Produce by kaonomi & community (cf. docs/Teams.md)
+
+namespace MARI.Framework.Core.Abstractions.Models.Surrogates
+{
+    using MARI.Framework.Core.Models;
+
+    using Orleans;
+
+    using System;
+
+    /// <summary>
+    /// Surrogate class using to serialize and restore <see cref="ExecutionContext"/>
+    /// </summary>
+    [GenerateSerializer]
+    public struct ExecutionContextSurrogate : IExecutionContextSurrogate
+    {
+        /// <inheritdoc cref="ExecutionContext.FlowUID" />
+        [Id(0)]
+        public Guid FlowUID { get; set; }
+
+        /// <inheritdoc cref="ExecutionContext.CurrentExecutionId" />
+        [Id(1)]
+        public Guid CurrentExecutionId { get; set; }
+
+        /// <inheritdoc cref="ExecutionContext.ParentExecutionId" />
+        [Id(2)]
+        public Guid? ParentExecutionId { get; set; }
+
+        [Id(3)]
+        public IReadOnlyCollection<IContextDataContainer> ContextDataContainers { get; set; } 
+    }
+}

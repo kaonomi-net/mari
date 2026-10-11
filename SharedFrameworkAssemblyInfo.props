@@ -1,0 +1,36 @@
+﻿<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>12</LangVersion>
+
+		<!-- MARI framework version (assemblies and nuget packages) -->
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<InformationalVersion>1.0.0</InformationalVersion>
+
+		<Authors>Kaonomi</Authors>
+		<Company>Kaonomi.net</Company>
+
+		<NeutralLanguage>en</NeutralLanguage>
+		<Copyright>Copyright (c) Kaonomi.net</Copyright>
+		
+		<PackageProjectUrl>https://github.com/kaonomi-net/mari</PackageProjectUrl>
+		<PackageLicenseFile>pkg/LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>pkg/logo.png</PackageIcon>
+		<RepositoryType>Git</RepositoryType>
+		<RepositoryUrl>https://github.com/kaonomi-net/mari/</RepositoryUrl>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+      <None Include="$(MSBuildThisFileDirectory)docs\logo.png" Pack="true" PackagePath="pkg/"/>
+      <None Include="$(MSBuildThisFileDirectory)LICENSE" Pack="true" PackagePath="pkg/" />
+      <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="/" Visible="false" />
+  </ItemGroup>
+	
+</Project>

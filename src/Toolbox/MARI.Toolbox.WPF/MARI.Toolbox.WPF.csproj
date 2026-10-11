@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+		<IsPackable>true</IsPackable>
+		<Description>ToolBox that contains extention for WPF dev.</Description>
+		<PackageTags>toolbox;dotnet;helpers;configurations;WPF</PackageTags>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <ProjectReference Include="..\MARI.Toolbox.WPF.Abstractions\MARI.Toolbox.WPF.Abstractions.csproj" />
+	  <ProjectReference Include="..\MARI.Toolbox\MARI.Toolbox.csproj" />
+	</ItemGroup>
+
+</Project>

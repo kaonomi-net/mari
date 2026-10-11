@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="$(SolutionDir)\SharedFrameworkAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>false</IsPackable>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="HtmlAgilityPack" />
+		<ProjectReference Include="..\..\..\src\Frameworks\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="$(SolutionDir)Kaonomi.Sample.Forex.VGrain.Abstractions\Kaonomi.Sample.Forex.VGrain.Abstractions.csproj" />
+	</ItemGroup>
+</Project>

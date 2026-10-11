@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI client abstract library used to consume mari cluster nodes.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Client;Abstract</PackageTags>
+
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\MARI.Framework.Cluster.Abstractions\MARI.Framework.Cluster.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

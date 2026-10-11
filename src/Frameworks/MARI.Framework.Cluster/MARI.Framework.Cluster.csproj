@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\SharedFrameworkAssemblyInfo.props" />
+	<Import Project="..\..\..\SharedFrameworkMARIAssemblyInfo.props" />
+
+	<PropertyGroup>
+
+		<IsPackable>true</IsPackable>
+		<Description>MARI common cluster library use by node and client side.</Description>
+
+		<PackageTags>MARI;Orleans;Multi-VGrain;Multi-Grain;Multi-Agent;Framework;Cluster</PackageTags>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Toolbox\MARI.Toolbox.Configuration\MARI.Toolbox.Configuration.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MARI.Framework.Cluster.Abstractions\MARI.Framework.Cluster.Abstractions.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Core.Abstractions\MARI.Framework.Core.Abstractions.csproj" />
+		<ProjectReference Include="..\MARI.Framework.Core\MARI.Framework.Core.csproj" />
+	</ItemGroup>
+
+</Project>

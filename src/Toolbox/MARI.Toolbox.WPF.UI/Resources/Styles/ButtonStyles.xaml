@@ -1,0 +1,280 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:ctrl="clr-namespace:MARI.Toolbox.WPF.UI.Controls" 
+                    xmlns:cnv="clr-namespace:MARI.Toolbox.WPF.UI.Converters">
+
+    <cnv:GroupConverter x:Key="CollapsedIfNullConverter">
+        <cnv:NullToBoolConverter />
+        <cnv:InvertConverter />
+        <cnv:BoolToVisibilityConveter />
+    </cnv:GroupConverter>
+
+    <cnv:GroupConverter x:Key="ButtonNotBoolToVisibilityConverter">
+        <cnv:InvertConverter />
+        <cnv:BoolToVisibilityConveter />
+    </cnv:GroupConverter>
+
+    <cnv:BoolToVisibilityConveter x:Key="ButtonBoolToVisibilityConverter" />
+
+    <Style x:Key="DefaultButtonFlatStyle" TargetType="Button">
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource MainForegroundBrush}" />
+        <Setter Property="Margin" Value="{DynamicResource DefaultMargin}" />
+        <Setter Property="Padding" Value="{DynamicResource GoldenMargin}" />
+
+        <Setter Property="OpacityMask" Value="{DynamicResource NormalMaskBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+
+        <Setter Property="BorderThickness" Value="1" />
+
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+
+                        <Grid>
+
+                            <Border x:Name="Bd" />
+                            <ContentPresenter Margin="{TemplateBinding Padding}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                        </Grid>
+
+                    </Border>
+                    <ControlTemplate.Triggers>
+
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="OpacityMask" Value="{DynamicResource DisabledMaskBrush}" />
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="OpacityMask" Value="{DynamicResource HighlightMaskBrush}" />
+                <Setter Property="Background" Value="{DynamicResource HighlightBackgroundBrush}" />
+            </Trigger>
+
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="RenderTransformOrigin" Value="0.5,0.5" />
+                <Setter Property="RenderTransform">
+                    <Setter.Value>
+                        <ScaleTransform ScaleX="0.9" ScaleY="0.9" />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style BasedOn="{StaticResource DefaultButtonFlatStyle}" TargetType="Button" />
+
+    <Style x:Key="DefaultButtonPathFlatStyle" TargetType="{x:Type ctrl:ButtonPath}" BasedOn="{StaticResource DefaultButtonFlatStyle}">
+        <Setter Property="Padding" Value="{DynamicResource SmallMargin}" />
+        <Setter Property="IconBrush" Value="{DynamicResource AccentBrush}" />
+        <Setter Property="IconStyle" Value="{DynamicResource IconSmallPathStyle}" />
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource MainForegroundBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ctrl:ButtonPath}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}">
+
+                        <StackPanel Margin="{TemplateBinding Padding}" Orientation="Horizontal"
+                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
+
+                            <Path Data="{TemplateBinding IconPath}"
+                                  Fill="{TemplateBinding IconBrush}"
+                                  Opacity="{TemplateBinding Opacity}"
+                                  Style="{TemplateBinding IconStyle}" />
+
+                            <ContentPresenter Margin="{DynamicResource SmallLeftMargin}"
+                                              Visibility="{TemplateBinding Content, Converter={StaticResource CollapsedIfNullConverter}}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+
+                        </StackPanel>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+
+    <Style TargetType="{x:Type ctrl:ButtonPath}" BasedOn="{StaticResource DefaultButtonPathFlatStyle}" />
+
+    <Style x:Key="DefaultFlatToggleButtonBase" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MainBackgroundBrush}" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource MainForegroundBrush}" />
+        <Setter Property="Padding" Value="{DynamicResource GoldenMargin}" />
+        <Setter Property="Margin" Value="{DynamicResource DefaultMargin}" />
+        <Setter Property="OpacityMask" Value="{DynamicResource NormalMaskBrush}" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+
+        <Setter Property="ToolTipService.ShowOnDisabled" Value="True" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}"
+                            TextBlock.Foreground="{TemplateBinding Foreground}">
+
+                        <ContentPresenter Margin="{TemplateBinding Padding}"
+                                          Content="{TemplateBinding Content}"
+                                          ContentTemplate="{TemplateBinding ContentTemplate}"
+                                          
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="RenderTransformOrigin" Value="0.5,0.5" />
+                <Setter Property="RenderTransform">
+                    <Setter.Value>
+                        <ScaleTransform ScaleX="0.9" ScaleY="0.9"  />
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="OpacityMask" Value="{DynamicResource HighlightMaskBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+                <Setter Property="TextElement.Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+            </Trigger>
+
+            <Trigger Property="IsMouseDirectlyOver" Value="True">
+                <Setter Property="OpacityMask" Value="{DynamicResource HighlightMaskBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+                <Setter Property="TextElement.Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+            </Trigger>
+
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="OpacityMask" Value="{DynamicResource DisabledMaskBrush}" />
+            </Trigger>
+
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="DefaultFlatToggleButton" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource DefaultFlatToggleButtonBase}" />
+    <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource DefaultFlatToggleButton}" />
+
+
+    <Style x:Key="ImageFlatToggleButton" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource DefaultFlatToggleButton}">
+        <Setter Property="Padding" Value="{DynamicResource DefaultMargin}" />
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+                <Setter Property="TextElement.Foreground" Value="{DynamicResource ForegroundOnAccentBrush}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="AddMinusToggleButton" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource DefaultFlatToggleButton}">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="{DynamicResource DefaultMargin}" />
+        <Setter Property="Foreground" Value="{DynamicResource AccentBrush}" />
+        <Setter Property="OpacityMask" Value="{DynamicResource NormalMaskBrush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+
+                    <Grid Background="{TemplateBinding Background}">
+
+                        <Path Data="{DynamicResource RightIconSource}"
+                              Fill="{TemplateBinding Foreground}"
+                              Style="{DynamicResource IconSmallestPathStyle}"
+                              Visibility="{TemplateBinding IsChecked, Converter={StaticResource ButtonNotBoolToVisibilityConverter}}"/>
+
+                        <Path Data="{DynamicResource DownIconSource}"
+                              Fill="{TemplateBinding Foreground}"
+                              Style="{DynamicResource IconSmallestPathStyle}"
+                              Visibility="{TemplateBinding IsChecked, Converter={StaticResource ButtonBoolToVisibilityConverter}}"/>
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="SlideToggleButtonStyle" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+        <Setter Property="TextElement.Foreground" Value="{DynamicResource MainForegroundBrush}" />
+        <Setter Property="Padding" Value="{DynamicResource DefaultMargin}" />
+        <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MainBorderBrush}" />
+        <Setter Property="OpacityMask" Value="{DynamicResource NormalMaskBrush}" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+
+                        <ContentPresenter Margin="{TemplateBinding Padding}" Grid.Column="0"
+                                          Visibility="{TemplateBinding Content, Converter={StaticResource CollapsedIfNullConverter}}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+
+                        <Grid Grid.Column="1" 
+                              MinWidth="50" 
+                              Margin="{TemplateBinding Padding}"
+                              VerticalAlignment="Stretch">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto" />
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Border CornerRadius="10" Grid.ColumnSpan="3"
+                                    x:Name="Container"
+                                    Background="Transparent"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    BorderBrush="{TemplateBinding BorderBrush}" />
+
+                            <Ellipse Fill="{TemplateBinding Background}"
+                                     StrokeThickness="1"
+                                     x:Name="ButtonIcon"
+                                     Width="{Binding ActualHeight, RelativeSource={RelativeSource Self}}"
+                                     Stroke="{TemplateBinding BorderBrush}"/>
+                        </Grid>
+
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Grid.Column" Value="2" TargetName="ButtonIcon" />
+                            <Setter Property="Background" Value="{Binding Background, RelativeSource={RelativeSource Mode=TemplatedParent}}" TargetName="Container" />
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

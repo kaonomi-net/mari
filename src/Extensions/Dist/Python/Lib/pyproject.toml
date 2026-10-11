@@ -1,0 +1,20 @@
+[project]
+name = "mari"
+version = "1.0.0"
+authors = [
+  { name="Kaonomi", email="info@kaonomi.net" },
+]
+
+description = "Library use to construct VGrain to mari servers"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kaonomi-net/mari"
+Issues = "https://github.com/kaonomi-net/mari/issues"

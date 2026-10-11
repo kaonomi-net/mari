@@ -1,0 +1,87 @@
+# process -> https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+parameters:
+  - name: ReleasePublic
+    displayName: Release Public
+    type: boolean
+    default: false
+    values:
+    - true
+    - false
+  
+  - name: FinalPkgVersionNumber
+    displayName: Pkg Version Number (empty = Version from SharedFrameworkAssemblyInfo.props)
+    type: string
+    default: ' '
+
+variables:
+  #- template: Templates/azure-pipeline-pkg-version.yml
+
+  - name: localReleasePublic
+    value: $(ReleasePublic)
+
+  - ${{ if eq(parameters.ReleasePublic, true) }}:
+    - group: pip-repository-variables-release
+  
+  - ${{ if ne(parameters.ReleasePublic, true) }}:
+    - group: pip-repository-variables-test
+
+  - name: repoAlias
+    ${{ if eq(parameters.ReleasePublic, true) }}:
+      value: pypi
+    ${{ else }}:
+      value: testpypi
+
+  - name: PythonPkgFolder
+    value: "./src/Extensions/Dist/Python/Lib/"
+
+steps:
+
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.x'
+    displayName: 'Use Python 3.x'
+
+  - script: python -m pip install --upgrade pip
+    displayName: 'Install pip & dependencies'
+  
+  - script: python -m pip install --upgrade build
+    displayName: 'Python package builder'
+
+  - bash: |
+      version="$(echo '${{ parameters.FinalPkgVersionNumber }}' | xargs)"
+      if [ -z "$version" ]; then
+        version="$(grep -oP '(?<=<Version>)[^<]+(?=</Version>)' '$(Build.SourcesDirectory)/SharedFrameworkAssemblyInfo.props' | head -n 1 | xargs)"
+      fi
+      if [ -z "$version" ]; then
+        echo "##vso[task.logissue type=error]Unable to resolve the package version"
+        exit 1
+      fi
+      echo "Python package version : $version"
+      echo "##vso[task.setvariable variable=ResolvedPkgVersion]$version"
+    displayName: 'Resolve pkg version'
+
+  - script: sed -i 's/^version = ".*"/version = "$(ResolvedPkgVersion)"/' pyproject.toml
+    workingDirectory: ${{ variables.PythonPkgFolder }}
+    displayName: 'Setup pkg version'
+  
+  - script: python -m build
+    workingDirectory: ${{ variables.PythonPkgFolder }}
+    displayName: 'Build python package'
+
+  - script: python -m pip install --upgrade twine
+    workingDirectory: ${{ variables.PythonPkgFolder }}
+    displayName: 'Python package twine'
+
+  # https://twine.readthedocs.io/en/stable/#twine-upload
+  - script: python3 -m twine upload --non-interactive -r ${{ variables.repoAlias }} dist/* 
+    workingDirectory: ${{ variables.PythonPkgFolder }}
+    env:
+      TWINE_USERNAME: $(pythonRepoUsername)
+      TWINE_PASSWORD: $(pythonRepoPassword)
+    displayName: 'Upload package to repository ${{ variables.repoAlias }}'

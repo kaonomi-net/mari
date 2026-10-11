@@ -1,0 +1,370 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- https://www.iconfinder.com/iconsets/google-material-design-3-0 -->
+
+    <!-- https://www.iconfinder.com/icons/3669476/add_circle_ic_icon -->
+    <PathGeometry x:Key="AddIconSource">
+        M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669253/ic_search_icon -->
+    <PathGeometry x:Key="SearchIconSource">
+        M31 28h-1.59l-.55-.55C30.82 25.18 32 22.23 32 19c0-7.18-5.82-13-13-13S6 11.82 6 19s5.82 13 13 13c3.23 0 6.18-1.18 8.45-3.13l.55.55V31l10 9.98L40.98 38 31 28zm-12 0c-4.97 0-9-4.03-9-9s4.03-9 9-9 9 4.03 9 9-4.03 9-9 9z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669396/cached_ic_icon -->
+    <PathGeometry x:Key="RefreshIconSource">
+        M38 16l-8 8h6c0 6.63-5.37 12-12 12-2.03 0-3.93-.51-5.61-1.39l-2.92 2.92C17.95 39.08 20.86 40 24 40c8.84 0 16-7.16 16-16h6l-8-8zm-26 8c0-6.63 5.37-12 12-12 2.03 0 3.93.51 5.61 1.39l2.92-2.92C30.05 8.92 27.14 8 24 8 15.16 8 8 15.16 8 24H2l8 8 8-8h-6z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669272/remove_circle_ic_icon -->
+    <PathGeometry x:Key="CancelIconSource">
+        M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm10 22H14v-4h20v4z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669480/account_circle_ic_icon -->
+    <PathGeometry x:Key="UserBagIconSource">
+        M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 6c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm0 28.4c-5.01 0-9.41-2.56-12-6.44.05-3.97 8.01-6.16 12-6.16s11.94 2.19 12 6.16c-2.59 3.88-6.99 6.44-12 6.44z
+    </PathGeometry>
+    
+    <!-- https://www.iconfinder.com/icons/3669406/warning_ic_icon -->
+    <PathGeometry x:Key="WarningIconSource">
+        M2 42h44L24 4 2 42zm24-6h-4v-4h4v4zm0-8h-4v-8h4v8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669348/error_ic_icon -->
+    <PathGeometry x:Key="ErrorIconSource">
+        M24 4C12.96 4 4 12.95 4 24s8.96 20 20 20 20-8.95 20-20S35.04 4 24 4zm2 30h-4v-4h4v4zm0-8h-4V14h4v12z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669173/help_ic_icon -->
+    <PathGeometry x:Key="InfoIconSource">
+        M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm2 34h-4v-4h4v4zm4.13-15.49l-1.79 1.84C26.9 25.79 26 27 26 30h-4v-1c0-2.21.9-4.21 2.34-5.66l2.49-2.52C27.55 20.1 28 19.1 28 18c0-2.21-1.79-4-4-4s-4 1.79-4 4h-4c0-4.42 3.58-8 8-8s8 3.58 8 8c0 1.76-.71 3.35-1.87 4.51z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669355/done_ic_icon -->
+    <PathGeometry x:Key="CheckIconSource">
+        M18 32.34L9.66 24l-2.83 2.83L18 38l24-24-2.83-2.83z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669380/check_circle_ic_icon -->
+    <PathGeometry x:Key="SuccessIconSource">
+        M24 4C12.95 4 4 12.95 4 24c0 11.04 8.95 20 20 20 11.04 0 20-8.96 20-20 0-11.05-8.96-20-20-20zm-4 30L10 24l2.83-2.83L20 28.34l15.17-15.17L38 16 20 34z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669255/ic_save_floppy_icon -->
+    <PathGeometry x:Key="SaveIconSource">
+        M34 6H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V14l-8-8zM24 38c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm6-20H10v-8h20v8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669361/delete_ic_icon -->
+    <PathGeometry x:Key="DeleteIconSource">
+        M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669378/clear_ic_icon -->
+    <PathGeometry x:Key="ClearIconSource">
+        M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669145/ic_visibility_icon -->
+    <PathGeometry x:Key="SeeIconSource">
+        M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352020/arrow_back_icon -->
+    <PathGeometry x:Key="BackIconSource">
+        M40 22h-24.34l11.17-11.17-2.83-2.83-16 16 16 16 2.83-2.83-11.17-11.17h24.34v-4z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352554/add_library_my_icon -->
+    <PathGeometry x:Key="AddItemIconSource">
+        M8 12H4v28c0 2.21 1.79 4 4 4h28v-4H8V12zm32-8H16c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-2 18h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352572/browser_in_open_icon -->
+    <PathGeometry x:Key="OpenIconSource">
+        M38 8h-28c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h8v-4h-8v-20h28v20h-8v4h8c2.21 0 4-1.79 4-4v-24c0-2.21-1.79-4-4-4zm-14 12l-8 8h6v12h4v-12h6l-8-8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352270/close_icon -->
+    <PathGeometry x:Key="CloseIconSource">
+        M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352523/lock_icon -->
+    <PathGeometry x:Key="LockIconSource">
+        M36 16h-2v-4c0-5.52-4.48-10-10-10s-10 4.48-10 10v4h-2c-2.21 0-4 1.79-4 4v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4v-20c0-2.21-1.79-4-4-4zm-12 18c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.2-18h-12.4v-4c0-3.42 2.78-6.2 6.2-6.2 3.42 0 6.2 2.78 6.2 6.2v4z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352524/lock_open_icon -->
+    <PathGeometry x:Key="UnLockIconSource">
+        M24 34c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm12-18h-2v-4c0-5.52-4.48-10-10-10s-10 4.48-10 10h3.8c0-3.42 2.78-6.2 6.2-6.2 3.42 0 6.2 2.78 6.2 6.2v4h-18.2c-2.21 0-4 1.79-4 4v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4v-20c0-2.21-1.79-4-4-4zm0 24h-24v-20h24v20z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352305/desktop_mac_icon -->
+    <PathGeometry x:Key="SolutionIconSource">
+        M42 4h-36c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h14l-4 6v2h16v-2l-4-6h14c2.21 0 4-1.79 4-4v-24c0-2.21-1.79-4-4-4zm0 24h-36v-20h36v20z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352204/list_view_icon -->
+    <PathGeometry x:Key="ProjectIconSource">
+        M8 28h8v-8h-8v8zm0 10h8v-8h-8v8zm0-20h8v-8h-8v8zm10 10h24v-8h-24v8zm0 10h24v-8h-24v8zm0-28v8h24v-8h-24z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352200/carousel_view_icon -->
+    <PathGeometry x:Key="SceneIconSource">
+        M14 38h20v-30h-20v30zm-10-4h8v-22h-8v22zm32-22v22h8v-22h-8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352538/memory_icon -->
+    <PathGeometry x:Key="CraftItemIconSource">
+        M30 18h-12v12h12v-12zm-4 8h-4v-4h4v4zm16-4v-4h-4v-4c0-2.21-1.79-4-4-4h-4v-4h-4v4h-4v-4h-4v4h-4c-2.21 0-4 1.79-4 4v4h-4v4h4v4h-4v4h4v4c0 2.21 1.79 4 4 4h4v4h4v-4h4v4h4v-4h4c2.21 0 4-1.79 4-4v-4h4v-4h-4v-4h4zm-8 12h-20v-20h20v20z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352571/now_widgets_icon -->
+    <PathGeometry x:Key="CraftBlueprintIconSource">
+        M26 26v16h16v-16h-16zm-20 16h16v-16h-16v16zm0-36v16h16v-16h-16zm27.31-2.63l-11.31 11.32 11.31 11.31 11.31-11.31-11.31-11.32z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352484/layers_icon-->
+    <PathGeometry x:Key="LayerIconSource">
+        M23.99 37.08l-14.75-11.47-3.24 2.52 18 14 18-14-3.26-2.53-14.75 11.48zm.01-5.08l14.73-11.45 3.27-2.55-18-14-18 14 3.26 2.53 14.74 11.47z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352375/folder_open_icon  -->
+    <PathGeometry x:Key="FolderIconSource">
+        M40 12h-16l-4-4h-12c-2.21 0-3.98 1.79-3.98 4l-.02 24c0 2.21 1.79 4 4 4h32c2.21 0 4-1.79 4-4v-20c0-2.21-1.79-4-4-4zm0 24h-32v-20h32v20z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352456/drive_file_insert_icon -->
+    <PathGeometry x:Key="UnknownFileIconSource">
+        M12 4c-2.21 0-3.98 1.79-3.98 4l-.02 32c0 2.21 1.77 4 3.98 4h24.02c2.21 0 4-1.79 4-4v-24l-12-12h-16zm14 14v-11l11 11h-11z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352141/rate_star_icon -->
+    <PathGeometry x:Key="StarIconSource">
+        M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352468/arrow_right_icon-->
+    <PathGeometry x:Key="RightIconSource">
+        M17.17 32.92l9.17-9.17-9.17-9.17 2.83-2.83 12 12-12 12z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352469/arrow_up_icon-->
+    <PathGeometry x:Key="UpIconSource">
+        M14.83 30.83l9.17-9.17 9.17 9.17 2.83-2.83-12-12-12 12z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352466/arrow_down_icon-->
+    <PathGeometry x:Key="DownIconSource">
+        M14.83 16.42l9.17 9.17 9.17-9.17 2.83 2.83-12 12-12-12z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352507/local_offer_icon -->
+    <PathGeometry x:Key="TagIconSource">
+        M42.82 23.16l-17.99-17.99c-.73-.72-1.73-1.17-2.83-1.17h-14c-2.21 0-4 1.79-4 4v14c0 1.11.45 2.11 1.18 2.83l18 18c.72.72 1.72 1.17 2.82 1.17 1.1 0 2.11-.45 2.83-1.17l14-14c.72-.73 1.17-1.73 1.17-2.83 0-1.11-.45-2.11-1.18-2.84zm-31.82-9.16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352459/insert_photo_icon -->
+    <PathGeometry x:Key="ImageIconSource">
+        M42 38v-28c0-2.21-1.79-4-4-4h-28c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4zm-25-11l5 6.01 7-9.01 9 12h-28l7-9z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352570/now_wallpaper_icon-->
+    <PathGeometry x:Key="MissingIconIconSource">
+        M8 8h14v-4h-14c-2.21 0-4 1.79-4 4v14h4v-14zm12 18l-8 10h24l-6-8-4.06 5.42-5.94-7.42zm14-9c0-1.66-1.34-3-3-3s-3 1.34-3 3 1.34 3 3 3 3-1.34 3-3zm6-13h-14v4h14v14h4v-14c0-2.21-1.79-4-4-4zm0 36h-14v4h14c2.21 0 4-1.79 4-4v-14h-4v14zm-32-14h-4v14c0 2.21 1.79 4 4 4h14v-4h-14v-14z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352032/attach_file_icon-->
+    <PathGeometry x:Key="AttachIconSource">
+        M33 12v23c0 4.42-3.58 8-8 8s-8-3.58-8-8v-25c0-2.76 2.24-5 5-5s5 2.24 5 5v21c0 1.1-.89 2-2 2-1.11 0-2-.9-2-2v-19h-3v19c0 2.76 2.24 5 5 5s5-2.24 5-5v-21c0-4.42-3.58-8-8-8s-8 3.58-8 8v25c0 6.08 4.93 11 11 11s11-4.92 11-11v-23h-3z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352108/power_icon-->
+    <PathGeometry x:Key="PowerIconSource">
+        M14 48h4v-4h-4v4zm8 0h4v-4h-4v4zm4-44h-4v20h4v-20zm7.13 4.87l-2.89 2.89c3.45 2.11 5.76 5.9 5.76 10.24 0 6.63-5.37 12-12 12s-12-5.37-12-12c0-4.34 2.31-8.13 5.76-10.24l-2.89-2.89c-4.15 2.89-6.87 7.69-6.87 13.13 0 8.84 7.16 16 16 16s16-7.16 16-16c0-5.44-2.72-10.24-6.87-13.13zm-3.13 39.13h4v-4h-4v4z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352433/input_icon-->
+    <PathGeometry x:Key="BuildIconSource">
+        M42 6.02h-36c-2.21 0-4 1.79-4 4v7.98h4v-8.02h36v28.06h-36v-8.04h-4v8.02c0 2.21 1.79 3.96 4 3.96h36c2.21 0 4-1.76 4-3.96v-28c0-2.21-1.79-4-4-4zm-20 25.98l8-8-8-8v6h-20v4h20v6z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352339/extension_icon-->
+    <PathGeometry x:Key="MapIconSource">
+        M41 22h-3v-8c0-2.21-1.79-4-4-4h-8v-3c0-2.76-2.24-5-5-5s-5 2.24-5 5v3h-8c-2.21 0-3.98 1.79-3.98 4l-.01 7.6h2.99c2.98 0 5.4 2.42 5.4 5.4s-2.42 5.4-5.4 5.4h-2.99l-.01 7.6c0 2.21 1.79 4 4 4h7.6v-3c0-2.98 2.42-5.4 5.4-5.4 2.98 0 5.4 2.42 5.4 5.4v3h7.6c2.21 0 4-1.79 4-4v-8h3c2.76 0 5-2.24 5-5s-2.24-5-5-5z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352252/business_icon-->
+    <PathGeometry x:Key="StageIconSource">
+        M24 14v-8h-20v36h40v-28h-20zm-12 24h-4v-4h4v4zm0-8h-4v-4h4v4zm0-8h-4v-4h4v4zm0-8h-4v-4h4v4zm8 24h-4v-4h4v4zm0-8h-4v-4h4v4zm0-8h-4v-4h4v4zm0-8h-4v-4h4v4zm20 24h-16v-4h4v-4h-4v-4h4v-4h-4v-4h16v20zm-4-16h-4v4h4v-4zm0 8h-4v4h4v-4z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352147/straighten_icon-->
+    <PathGeometry x:Key="RulerIconSource">
+        M42 12h-36c-2.21 0-4 1.79-4 4v16c0 2.21 1.79 4 4 4h36c2.21 0 4-1.79 4-4v-16c0-2.21-1.79-4-4-4zm0 20h-36v-16h4v8h4v-8h4v8h4v-8h4v8h4v-8h4v8h4v-8h4v16z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669311/tool_pan_ic_icon -->
+    <PathGeometry x:Key="PanIconSource">
+        M46 11v29c0 4.4-3.6 8-8 8H23.4c-2.16 0-4.2-.86-5.7-2.38L2 29.66s2.52-2.46 2.6-2.5c.44-.38.98-.58 1.58-.58.44 0 .84.12 1.2.32.08.02 8.62 4.92 8.62 4.92V8c0-1.66 1.34-3 3-3s3 1.34 3 3v14h2V3c0-1.66 1.34-3 3-3s3 1.34 3 3v19h2V5c0-1.66 1.34-3 3-3s3 1.34 3 3v17h2V11c0-1.66 1.34-3 3-3s3 1.34 3 3z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669361/delete_ic_icon -->
+    <PathGeometry x:Key="TrashIconSource">
+        M12 38c0 2.21 1.79 4 4 4h16c2.21 0 4-1.79 4-4V14H12v24zM38 8h-7l-2-2H19l-2 2h-7v4h28V8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669191/changes_track_ic_icon -->
+    <PathGeometry x:Key="TrackIconSource">
+        M38.14 9.86l-2.82 2.82C38.2 15.58 40 19.58 40 24c0 8.84-7.16 16-16 16S8 32.84 8 24c0-8.16 6.1-14.88 14-15.86v4.04c-5.68.96-10 5.88-10 11.82 0 6.62 5.38 12 12 12s12-5.38 12-12c0-3.32-1.34-6.32-3.52-8.48l-2.82 2.82C31.1 19.8 32 21.8 32 24c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-3.72 2.56-6.82 6-7.72v4.28c-1.2.7-2 1.96-2 3.44 0 2.2 1.8 4 4 4s4-1.8 4-4c0-1.48-.8-2.76-2-3.44V4h-2C12.96 4 4 12.96 4 24s8.96 20 20 20 20-8.96 20-20c0-5.52-2.24-10.52-5.86-14.14z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669313/open_with_ic_icon -->
+    <PathGeometry x:Key="MoveIconSource">
+        M20 18h8v-6h6L24 2 14 12h6v6zm-2 2h-6v-6L2 24l10 10v-6h6v-8zm28 4L36 14v6h-6v8h6v6l10-10zm-18 6h-8v6h-6l10 10 10-10h-6v-6z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669451/ratio_aspect_ic_icon -->
+    <PathGeometry x:Key="ScaleIconSource">
+        M38 24h-4v6h-6v4h10V24zm-24-6h6v-4H10v10h4v-6zM42 6H6c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h36c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zm0 32.03H6V9.97h36v28.06z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/1372387/landscape_off_on_orientation_rotate_icon -->
+    <PathGeometry x:Key="RotateIconSource">
+        M245 160l0 -1 0 1c1,-3 2,-6 2,-9 15,-67 -28,-134 -96,-148 -8,-2 -16,-3 -25,-3l0 25c7,0 13,1 20,2 27,6 49,22 63,44 4,6 8,14 11,21l-39 10 64 58zm-146 87c-68,-14 -111,-81 -96,-148 0,-3 1,-6 2,-9l21 19 0 0 42 38 -37 11c2,8 6,15 10,21 14,22 36,38 63,44 6,1 12,2 18,2l-1 25c-7,0 -15,-1 -22,-3zm-36 -144l39 -39c4,-4 10,-4 13,0l69 69c4,3 4,9 0,13l-39 39c-4,4 -10,4 -13,0l-69 -69c-4,-3 -4,-9 0,-13zm85 34c6,0 11,5 11,11 0,6 -5,10 -11,10 -6,0 -11,-4 -11,-10 0,-6 5,-11 11,-11z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352327/equalizer_icon -->
+    <PathGeometry x:Key="StatsIconSource">
+        M20 40h8V8h-8v32zM8 40h8V24H8v16zm24-22v22h8V18h-8z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352071/drop_pin_icon  -->
+    <PathGeometry x:Key="PathFindingIconSource">
+        M36 16c0-6.63-5.37-12-12-12s-12 5.37-12 12c0 9 12 22 12 22s12-13 12-22zm-16 0c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zm-10 24v4h28v-4h-28z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3209299/adjust_grid_layout_organize_table_icon -->
+    <PathGeometry x:Key="GridIconSource">
+        M48,2H2v46h46V2z M46,13h-9V4h9V13z M26,13V4h9v9H26z M35,15v9h-9v-9H35z M24,13h-9V4h9V13z M24,15v9h-9v-9H24z M13,24H4   v-9h9V24z M13,26v9H4v-9H13z M15,26h9v9h-9V26z M24,37v9h-9v-9H24z M26,37h9v9h-9V37z M26,35v-9h9v9H26z M37,26h9v9h-9V26z M37,24   v-9h9v9H37z M13,4v9H4V4H13z M4,37h9v9H4V37z M37,46v-9h9v9H37z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/3669178/gesture_ic_icon -->
+    <PathGeometry x:Key="GestureIconSource">
+        M9.19 13.77c1.4-1.43 2.8-2.71 3.43-2.45.99.41-.02 2.08-.6 3.05-.5.84-5.72 7.77-5.72 12.62 0 2.56.95 4.68 2.69 5.96 1.5 1.11 3.47 1.45 5.28.92 2.14-.63 3.9-2.79 6.12-5.53 2.42-2.98 5.66-6.88 8.16-6.88 3.26 0 3.3 2.02 3.52 3.59-7.58 1.3-10.77 7.35-10.77 10.76S24.18 42 27.71 42c3.25 0 8.59-2.66 9.38-12.2H42v-5h-4.94c-.3-3.3-2.18-8.39-8.06-8.39-4.5 0-8.37 3.82-9.87 5.69-1.16 1.45-4.11 4.95-4.57 5.45-.51.59-1.35 1.68-2.23 1.68-.89 0-1.43-1.67-.73-3.85.7-2.19 2.8-5.72 3.7-7.03 1.57-2.28 2.59-3.85 2.59-6.56 0-4.4-3.28-5.78-5.02-5.78-2.64 0-4.94 2-5.45 2.51-.71.72-1.31 1.31-1.75 1.85l3.52 3.4zm18.58 23.34c-.62 0-1.47-.52-1.47-1.45 0-1.2 1.45-4.4 5.75-5.53-.62 5.39-2.88 6.98-4.28 6.98z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/1608554/minus_icon -->
+    <PathGeometry x:Key="MinusIconSource">
+        M1600 736v192q0 40-28 68t-68 28h-1216q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h1216q40 0 68 28t28 68z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352250/brush_icon -->
+    <PathGeometry x:Key="BrushIconSource">
+        M14 28c-3.31 0-6 2.69-6 6 0 2.62-2.31 4-4 4 1.84 2.44 4.99 4 8 4 4.42 0 8-3.58 8-8 0-3.31-2.69-6-6-6zm27.41-18.74l-2.67-2.67c-.78-.78-2.05-.78-2.83 0l-17.91 17.91 5.5 5.5 17.91-17.91c.79-.79.79-2.05 0-2.83z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352018/apps_icon -->
+    <PathGeometry x:Key="TileIconSource">
+        M8 16h8v-8h-8v8zm12 24h8v-8h-8v8zm-12 0h8v-8h-8v8zm0-12h8v-8h-8v8zm12 0h8v-8h-8v8zm12-20v8h8v-8h-8zm-12 8h8v-8h-8v8zm12 12h8v-8h-8v8zm0 12h8v-8h-8v8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352222/incandescent_wb_icon -->
+    <PathGeometry x:Key="LogicIconSource">
+        M7.1 37.07l2.83 2.83 3.59-3.59-2.83-2.83-3.59 3.59zm14.9 7.83h4v-5.9h-4v5.9zm-14-23.9h-6v4h6v-4zm22-8.38v-9.62h-12v9.62c-3.58 2.08-6 5.94-6 10.38 0 6.63 5.37 12 12 12s12-5.37 12-12c0-4.44-2.42-8.31-6-10.38zm10 8.38v4h6v-4h-6zm-5.51 15.31l3.59 3.59 2.83-2.83-3.59-3.59-2.83 2.83z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352027/assignment_ind_icon -->
+    <PathGeometry x:Key="TestingProfileIconSource">
+        M38 6h-8.37c-.82-2.32-3.02-4-5.63-4s-4.81 1.68-5.63 4h-8.37c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4v-28c0-2.21-1.79-4-4-4zm-14 0c1.1 0 2 .89 2 2s-.9 2-2 2-2-.89-2-2 .9-2 2-2zm0 8c3.31 0 6 2.69 6 6 0 3.32-2.69 6-6 6s-6-2.68-6-6c0-3.31 2.69-6 6-6zm12 24h-24v-2.8c0-4 8-6.2 12-6.2s12 2.2 12 6.2v2.8z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/351981/and_b_filter_w_icon-->
+    <PathGeometry x:Key="TestingScenarioIconSource">
+        M38 6h-28c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4v-28c0-2.21-1.79-4-4-4zm0 32l-14-16v16h-14l14-16v-12h14v28z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352174/user_icon -->
+    <PathGeometry x:Key="UserIconSource">
+        M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352148/style_ico n-->
+    <PathGeometry x:Key="ResourceDictionaryIconSource">
+        M5.06 39.31l2.69 1.11v-18.05l-4.85 11.71c-.84 2.03.13 4.38 2.16 5.23zm39-7.42l-9.92-23.93c-.62-1.5-2.08-2.43-3.61-2.46-.53-.01-1.07.09-1.6.3l-14.73 6.1c-1.5.62-2.42 2.07-2.46 3.6-.01.54.08 1.08.3 1.61l9.91 23.93c.63 1.52 2.1 2.44 3.66 2.46.52 0 1.04-.09 1.55-.3l14.73-6.1c2.03-.84 3.01-3.18 2.17-5.21zm-28.31-14.39c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm-4 22c0 2.2 1.8 4 4 4h2.91l-6.91-16.68v12.68z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352345/file_upload_icon -->
+    <PathGeometry x:Key="UploadIconSource">
+        M18 32h12v-12h8l-14-14-14 14h8zm-8 4h28v4h-28z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352319/directions_walk_icon -->
+    <PathGeometry x:Key="WalkIconSource">
+        M28 7.6c1.98 0 3.6-1.61 3.6-3.6s-1.62-3.6-3.6-3.6c-1.99 0-3.6 1.61-3.6 3.6s1.61 3.6 3.6 3.6zm.24 12.4h9.76v-3.6h-7.25l-4-6.66c-.59-1-1.68-1.66-2.92-1.66-.34 0-.67.05-.98.14l-10.85 3.38v10.4h3.6v-7.33l4.21-1.31-7.81 30.64h3.6l5.74-16.22 4.66 6.22v10h3.6v-12.81l-4.98-9.08 1.47-5.74 2.15 3.63z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352072/arrow_play_icon -->
+    <PathGeometry x:Key="PlayIconSource">
+        M16 10v28l22-14z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352581/pause_icon -->
+    <PathGeometry x:Key="PauseIconSource">
+        M12 38h8V10h-8v28zm16-28v28h8V10h-8z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/iconsets/google-material-design-icons?q=Stop -->
+    <PathGeometry x:Key="StopIconSource">
+        M0 0h48v48H0z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352576/color_palette_paint_icon -->
+    <PathGeometry x:Key="PaletteIconSource">
+        M24 6c-9.94 0-18 8.06-18 18s8.06 18 18 18c1.66 0 3-1.34 3-3 0-.78-.29-1.48-.78-2.01-.47-.53-.75-1.22-.75-1.99 0-1.66 1.34-3 3-3h3.53c5.52 0 10-4.48 10-10 0-8.84-8.06-16-18-16zm-11 18c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6-8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm10 0c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm6 8c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352064/blur_on_icon-->
+    <PathGeometry x:Key="BlurMultiPointIconSource">
+        M12 26c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 1c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm6-9c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm30 11c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-14-7c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0-7c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-22 20c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm14 14c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm0-34c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm0 7c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 11c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm16 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 17c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-14 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 7c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1zm-8-24c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 17c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8-9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z
+    </PathGeometry>
+
+    <!--https://www.iconfinder.com/icons/352140/spellcheck_icon-->
+    <PathGeometry x:Key="SpellCheckedIconSource">
+        M24.89 32h4.18l-10.21-26h-3.71l-10.22 26h4.18l2.25-6h11.29l2.24 6zm-12.03-10l4.14-11.05 4.14 11.05h-8.28zm30.31 1.17l-16.17 16.17-7.34-7.34-2.83 2.83 10.17 10.17 19-19-2.83-2.83z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352001/account_child_icon -->
+    <PathGeometry x:Key="UsersIconSource">
+        M33 24c2.76 0 4.98-2.24 4.98-5s-2.22-5-4.98-5c-2.76 0-5 2.24-5 5s2.24 5 5 5zm-15-2c3.31 0 5.98-2.69 5.98-6s-2.67-6-5.98-6c-3.31 0-6 2.69-6 6s2.69 6 6 6zm15 6c-3.67 0-11 1.84-11 5.5v4.5h22v-4.5c0-3.66-7.33-5.5-11-5.5zm-15-2c-4.67 0-14 2.34-14 7v5h14v-4.5c0-1.7.67-4.67 4.74-6.94-1.74-.37-3.43-.56-4.74-.56z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352019/archive_icon -->
+    <PathGeometry x:Key="ArchiveIconSource">
+        M41.09 10.45l-2.77-3.36c-.56-.66-1.39-1.09-2.32-1.09h-24c-.93 0-1.76.43-2.31 1.09l-2.77 3.36c-.58.7-.92 1.58-.92 2.55v25c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4v-25c0-.97-.34-1.85-.91-2.55zm-17.09 24.55l-11-11h7v-4h8v4h7l-11 11zm-13.75-25l1.63-2h24l1.87 2h-27.5z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352275/cloud_download_icon -->
+    <PathGeometry x:Key="PublishIconSource">
+        M38.71 20.07c-1.36-6.88-7.43-12.07-14.71-12.07-5.78 0-10.79 3.28-13.3 8.07-6.01.65-10.7 5.74-10.7 11.93 0 6.63 5.37 12 12 12h26c5.52 0 10-4.48 10-10 0-5.28-4.11-9.56-9.29-9.93zm-4.71 5.93l-10 10-10-10h6v-8h8v8h6z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352095/settings_icon -->
+    <PathGeometry x:Key="SettingIconSource">
+        M38.86 25.95c.08-.64.14-1.29.14-1.95s-.06-1.31-.14-1.95l4.23-3.31c.38-.3.49-.84.24-1.28l-4-6.93c-.25-.43-.77-.61-1.22-.43l-4.98 2.01c-1.03-.79-2.16-1.46-3.38-1.97l-.75-5.3c-.09-.47-.5-.84-1-.84h-8c-.5 0-.91.37-.99.84l-.75 5.3c-1.22.51-2.35 1.17-3.38 1.97l-4.98-2.01c-.45-.17-.97 0-1.22.43l-4 6.93c-.25.43-.14.97.24 1.28l4.22 3.31c-.08.64-.14 1.29-.14 1.95s.06 1.31.14 1.95l-4.22 3.31c-.38.3-.49.84-.24 1.28l4 6.93c.25.43.77.61 1.22.43l4.98-2.01c1.03.79 2.16 1.46 3.38 1.97l.75 5.3c.08.47.49.84.99.84h8c.5 0 .91-.37.99-.84l.75-5.3c1.22-.51 2.35-1.17 3.38-1.97l4.98 2.01c.45.17.97 0 1.22-.43l4-6.93c.25-.43.14-.97-.24-1.28l-4.22-3.31zm-14.86 5.05c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z
+    </PathGeometry>
+
+    <PathGeometry x:Key="PinAutoHideIconSource">
+        M 128,17.475L 130.842,17.475L 130.842,2.91001L 130.842,0.608195L 130.842,0.000223796L 139.593,0.000223796L 145.003,0.000223796L 145.424,0.000223796L 145.424,17.475L 148.413,17.475L 148.413,20.3848L 139.684,20.3848L 139.684,32.0003L 136.752,32.0003L 136.752,20.3848L 128,20.3848L 128,17.475 Z M 133.774,2.91007L 133.774,17.475L 139.593,17.475L 139.593,2.91007L 133.774,2.91007 Z
+    </PathGeometry>
+
+    <!-- https://www.iconfinder.com/icons/352549/more_vert_icon -->
+    <PathGeometry x:Key="VerticalDotsIconSource">
+        M24 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 4c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 12c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z
+    </PathGeometry>
+
+</ResourceDictionary>

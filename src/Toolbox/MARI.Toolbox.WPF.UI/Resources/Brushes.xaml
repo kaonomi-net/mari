@@ -1,0 +1,87 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <DrawingBrush Viewport="0,0,25,25" 
+                  ViewportUnits="Absolute" 
+                  Stretch="None" 
+                  Opacity="1"
+                  TileMode="Tile" 
+                  x:Key="TileBackgroundBrush">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{DynamicResource MainBackgroundBrush}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <RectangleGeometry Rect="0,0,25,25"/>
+                            <RectangleGeometry Rect="25,25,25,25"/>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource ComplementaryBackgroundBrush}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <RectangleGeometry Rect="25,0,25,25"/>
+                            <RectangleGeometry Rect="0,25,25,25"/>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush Viewport="0,0,25,25" 
+                  ViewportUnits="Absolute" 
+                  Stretch="None" 
+                  Opacity="0.6"
+                  TileMode="Tile" 
+                  x:Key="TileLightBackgroundBrush">
+        <DrawingBrush.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{DynamicResource ContrastComplementaryBackgroundBrush}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <RectangleGeometry Rect="0,0,25,25"/>
+                            <RectangleGeometry Rect="25,25,25,25"/>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource ComplementaryBackgroundBrush}">
+                    <GeometryDrawing.Geometry>
+                        <GeometryGroup>
+                            <RectangleGeometry Rect="25,0,25,25"/>
+                            <RectangleGeometry Rect="0,25,25,25"/>
+                        </GeometryGroup>
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="SmallGridBrush" 
+                  TileMode="Tile" 
+                  Opacity="0.5"
+                  Viewport="0 0 30 30" 
+                  ViewportUnits="Absolute" >
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Geometry="M 0 0 L 30 0 L 30 30">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="{DynamicResource MainBorderBrush}"/>
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+    <DrawingBrush x:Key="LargeGridBrush" 
+                  TileMode="Tile" 
+                  Viewport="30 30 180 180" 
+                  ViewportUnits="Absolute" >
+        <DrawingBrush.Drawing>
+            <GeometryDrawing Geometry="M 0 0 L 180 0 L 180 180">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="{DynamicResource MainBorderBrush}"/>
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+
+</ResourceDictionary>

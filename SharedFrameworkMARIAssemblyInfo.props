@@ -1,0 +1,10 @@
+﻿<Project>
+
+	<PropertyGroup>
+
+		<Product>MARI</Product>
+		<PackageTags>MARI;Orleans;Multi-Agent;Multi-Grain;Multi-VAgent;VGrain;Grain;Framework</PackageTags>
+		
+	</PropertyGroup>
+	
+</Project>

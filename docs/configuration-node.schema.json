@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "id": "https://raw.githubusercontent.com/kaonomi-net/mari/refs/heads/hotfix/schema_id/docs/configuration-node.schema.json",
+  "title": "MARI Configurations",
+  "description": "The schema for dynamic mari server configuration",
+  "unevaluatedProperties": false,
+  "$ref": "https://raw.githubusercontent.com/kaonomi-net/mari/refs/heads/hotfix/schema_id/docs/configuration.schema.json",
+  "properties": {
+    "Endpoints": {
+      "$ref": "#/$defs/EndpointsDef"
+    },
+    "Node": {
+      "$ref": "#/$defs/NodeDef"
+    },
+    "Storages": {
+      "$ref": "#/$defs/StoragesDef"
+    },
+    "Repositories": {
+      "$ref": "#/$defs/RepositoriesDef"
+    },
+    "Definitions": {
+      "$ref": "#/$defs/DefinitionsDef"
+    }
+  },
+  "$defs": {
+    "_serviceDef": {
+      "unevaluatedProperties": false,
+      "type": "object",
+      "properties": {
+        "AutoKey": {
+          "$ref": "https://github.com/kaonomi-net/mari/docs/configuration.schema.json/$defs/_autoKey"
+        }
+      }
+    },
+    "EndpointsDef": {
+      "type": "object",
+      "properties": {
+        "Loopback": {
+          "type": "boolean"
+        },
+        "SiloPort": {
+          "type": "integer"
+        },
+        "GatewayPort": {
+          "type": "integer"
+        },
+        "AutoGatewayPort": {
+          "type": "boolean"
+        }
+      }
+    },
+    "NodeDef": {
+      "type": "object",
+      "properties": {
+
+      }
+    },
+    "StoragesDef": {
+      "type": "object",
+      "properties": {
+        "Default": {
+          "$ref": "#/$defs/_serviceDef"
+        },
+        "Admin": {
+          "$ref": "#/$defs/_serviceDef"
+        },
+        "MARI": {
+          "$ref": "#/$defs/_serviceDef"
+        },
+        "Reminders": {
+          "$ref": "#/$defs/_serviceDef"
+        },
+        "DynamicDefinitions": null,
+        "Customs": {
+          "type": "object",
+          "patternProperties": {
+            "[a-zA-Z0-9-]+": {
+              "type": "object",
+              "$ref": "#/$defs/_serviceDef"
+            }
+          }
+        }
+      }
+    },
+    "RepositoriesDef": {
+      "type": "object",
+      "properties": {
+        "Default": {
+          "$ref": "#/$defs/_serviceDef"
+        }
+      }
+    },
+    "DefinitionsDef": {
+      "type": "object",
+      "properties": {
+
+      }
+    }
+  }
+}
