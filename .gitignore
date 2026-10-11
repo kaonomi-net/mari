@@ -61,7 +61,8 @@ BenchmarkDotNet.Artifacts/
 # .NET Core
 project.lock.json
 project.fragment.lock.json
-artifacts/
+# root-only: the framework has source folders named "Artifacts"
+/artifacts/
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
