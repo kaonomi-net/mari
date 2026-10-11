@@ -855,9 +855,7 @@ In the section [Sample/DynamicDefinition](/samples/DynamicDefinition//)
 ## Next
 <br />
 
-![Static Badge](https://img.shields.io/badge/BETA-FF6A00?style=for-the-badge&logo=windows)
 
-<br />
 
 **v 1.0.0:** <br />
 [Release Node](/docs/ReleaseNotes.md#100)
@@ -865,6 +863,10 @@ In the section [Sample/DynamicDefinition](/samples/DynamicDefinition//)
 - [x] Restore the **Artifacts** sources
 - [x] Samples use the framework sources (project references)
 - [x] Bug fixing
+
+![Static Badge](https://img.shields.io/badge/BETA-FF6A00?style=for-the-badge&logo=windows)
+
+<br />
 
 **v 0.5.0-prerelease:** <br />
 [Release Node](/docs/ReleaseNotes.md#050-prerelease)
