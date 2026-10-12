@@ -3,7 +3,7 @@
 ### MARI is an open-source framework for building robust, scalable and distributed 'multi-agent like' system based on [Microsoft Orleans](https://github.com/dotnet/orleans).
 
 
-M-A-R-I offers an automated orchestration and configuration system, enabling dynamic creation, editing, and modification of grain interactions.
+M-A-R-I (ex democrite from nexai.net) offers an automated orchestration and configuration system, enabling dynamic creation, editing, and modification of grain interactions.
 
 It incorporates built-in [Features](#features) to manage virtual grains and facilitate communication between them. This simplifies the creation of various [Sequences](#sequences) of virtual grains that can be transformed an input to output. M-A-R-I utilizes [Signals](#signals) to transmit information and [Triggers](#triggers) to initiate different [Sequences](#sequences), thereby chaining processes through a graph. Most [Features](#features) are describe in a serializable structure.
 
